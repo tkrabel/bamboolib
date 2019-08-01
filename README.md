@@ -1,4 +1,4 @@
-# bamboolib - a UI for pandas. Stop googling pandas commands
+# bamboolib - a GUI for pandas. Stop googling pandas commands
 
 bamboolib is a graphical user interface for pandas dataframes in Jupyter Notebook or Jupyter Lab.
 
