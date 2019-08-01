@@ -1,8 +1,8 @@
-# bamboolib - stop googling pandas commands
+# bamboolib - a UI for pandas. Stop googling pandas commands
 
 bamboolib is a graphical user interface for pandas dataframes in Jupyter Notebook or Jupyter Lab.
 
-## [Join our mailing list if you want to get updates on the status of bamboolib](http://eepurl.com/gyy52D)
+## [Join our mailing list if you want to be the first to hear about updates](http://eepurl.com/gyy52D)
 
 
 The main benefits of bamboolib are:
