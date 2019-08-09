@@ -5,7 +5,7 @@ bamboolib is a graphical user interface for pandas dataframes in Jupyter Noteboo
 ## [Join our mailing list if you want to be the first to hear about updates](https://bamboolib.com)
 
 
-The main benefits of bamboolib are:
+The main benefits of bamboolib will be:
 - you can manipulate your pandas df via a user interface within your Jupyter Notebook
 - you get immediate feedback on all your data transformations
 - you can stop googling for pandas commands
