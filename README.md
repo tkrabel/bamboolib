@@ -11,4 +11,4 @@ The main benefits of bamboolib are:
 - you can stop googling for pandas commands
 - you can export the Python pandas code of your manipulations
 
-### [Watch the preview video](https://bamboolib.com)
+### [Watch the product vision video](https://bamboolib.com)
