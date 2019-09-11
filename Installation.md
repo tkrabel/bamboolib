@@ -15,6 +15,7 @@ To check whether everything went smoothly, start your Jupyter Notebook (`jupyter
 ```python
 import bamboolib as bam
 df = bam.get_titanic_df()
+df = pd.concat([df for i in range(0, 1211)])  # expand df to 1 mio rows
 prep = bam.prep(df)
 prep
 ```
