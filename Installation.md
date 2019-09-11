@@ -15,8 +15,8 @@ To check whether everything went smoothly, start your Jupyter Notebook (`jupyter
 ```python
 import bamboolib as bam
 df = bam.get_titanic_df()
-wrangler = bam.wrangle(df)
-wrangler
+prep = bam.prep(df)
+prep
 ```
 
 You should see a GUI if everything worked fine. If you don't see anything, please continue reading.
