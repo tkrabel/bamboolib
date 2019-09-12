@@ -17,8 +17,7 @@ import pandas as pd
 import bamboolib as bam
 df = bam.get_titanic_df()
 df = pd.concat([df for i in range(0, 1211)])  # expand df to 1 mio rows
-prep = bam.prep(df)
-prep
+bam.show(df)
 ```
 
 You should see a GUI if everything worked fine. If you don't see anything, please continue reading.
