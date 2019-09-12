@@ -13,10 +13,9 @@ From the terminal, you can install bamboolib with the pip install command that y
 To check whether everything went smoothly, start your Jupyter Notebook (`jupyter notebook`) in the terminal, create a new notebook file and run the following:
 
 ```python
-import pandas as pd
 import bamboolib as bam
-df = bam.get_titanic_df()
-df = pd.concat([df for i in range(0, 1211)])  # expand df to 1 mio rows
+df = bam.get_titanic_df()  # 891 rows and 12 columns
+# df = bam.get_1mio_rows_titanic_df()  # 1.079.001 rows and 12 columns
 bam.show(df)
 ```
 
