@@ -29,9 +29,8 @@ In such a case, you need to install and enable the bamboolib extension manually.
 
 Open your terminal and run
 ```bash
-# install the extension
+jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension install --py bamboolib --sys-prefix
-# tell jupyter to load it everytime you start a jupyter notebook
 jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
