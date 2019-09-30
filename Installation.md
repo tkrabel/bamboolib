@@ -14,7 +14,7 @@ To check whether everything went smoothly, start your Jupyter Notebook (`jupyter
 
 ```python
 import bamboolib as bam
-df = bam.get_titanic_df()  # 891 rows and 12 columns
+df = bam.get_titanic_df()  # the titanic pd.DataFrame with 891 rows and 12 columns
 # df = bam.get_1mio_rows_titanic_df()  # 1.079.001 rows and 12 columns
 bam.show(df)
 ```
