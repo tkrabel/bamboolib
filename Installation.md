@@ -27,7 +27,7 @@ Please make sure that the following is correct:
 - you try to run bamboolib in a Jupyter Notebook. And not Jupyter Lab.
 - you opened the Jupyter Notebook in the Chrome or Firefox browser. You don't use the Internet Explorer.
 
-If the installation still not works, you should try to manually install the needed Jupyter Extensions:
+If the installation still doesn't work, you should try to manually install the needed Jupyter Extensions:
 
 ## Manually install and enable Jupyter Extensions
 
