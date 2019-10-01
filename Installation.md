@@ -27,7 +27,7 @@ Please make sure that the following is correct:
 - you try to run bamboolib in a Jupyter Notebook. And not Jupyter Lab.
 - you opened the Jupyter Notebook in the Chrome or Firefox browser. You don't use the Internet Explorer.
 
-If the installation still doesn't work, you should try to manually install the needed Jupyter Extensions:
+If the installation still doesn't work, you should try to [manually install the needed Jupyter Extensions](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#manually-install-and-enable-jupyter-extensions).
 
 ## Manually install and enable Jupyter Extensions
 
@@ -43,3 +43,15 @@ jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
 Then, restart your Jupyter notebook (make sure to shut down the server and start it over again) and try the code snippet from above again.
+
+## Installing bamboolib using virtualenv
+
+If you manage your python packages using `virtualenv`, then follow these steps to install and use bamboolib in your virtual environment (venv).
+
+0. pip install virtualenv if you haven't done already: `pip install virtualenv`
+1. create your venv with `virtualenv <venv_name>`
+2. activate the venv: `source <venv_name>/bin/activate`
+3. install bamboolib
+5. add the ipython kernel to jupyter: `ipython kernel install --user --name=<any_name_you_want>`. Note that the name you choose will appear in the kernel list of your jupyter notebook.
+
+You should now be able to run bamboolib using the ipython kernel from your venv.s
