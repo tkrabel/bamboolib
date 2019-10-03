@@ -4,16 +4,14 @@
 
 This markdown will help you install bamboolib based on your computer setup. What does you setup look like?
 
-- I am using [pip virtualenv](https://github.com/tkrabel/bamboolib/blob/master/Installation_walkthrough.md#installing-bamboolib-using-virtualenv)
-- I am using [conda virtual environment](https://github.com/tkrabel/bamboolib/blob/master/Installation_walkthrough.md#installing-bamboolib-using-conda-environment)
-- I don't use virtual environments / I don't know what a virtual environment is
+- I am using [pip virtualenv](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#installing-bamboolib-using-virtualenv)
+- I am using [conda virtual environment](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#installing-bamboolib-using-conda-environment)
+- [I don't use virtual environments / I don't know what a virtual environment is](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#pip-install)
 
 
 In order to install bamboolib, you only need to do one thing.
 
-## pip install
-
-From the terminal, you can install bamboolib with the pip install command that you received from us via mail.
+--------
 
 ## Test the library
 
@@ -35,6 +33,8 @@ bam.show(df)
 ```
 
 You should see a GUI if everything worked fine. If you don't see anything, please continue reading.
+
+--------
 
 ## Troubleshooting installation errors
 
@@ -117,7 +117,7 @@ deactivate
 
 ### 7. Test bamboolib
 
-Go [here](https://github.com/tkrabel/bamboolib/blob/master/Installation_walkthrough.md#test-the-library).
+Go [here](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#test-the-library).
 
 ------------
 
@@ -163,4 +163,12 @@ source deactivate
 
 ### 6. Test bamboolib
 
-Go [here](https://github.com/tkrabel/bamboolib/blob/master/Installation_walkthrough.md#test-the-library).
+Go [here](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#test-the-library).
+
+-----------
+
+## Installing bamboolib without virtual environment
+
+From the terminal, you can install bamboolib with the pip install command that you received from us via mail.
+
+Afterwards, continue [here](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#test-the-library).
