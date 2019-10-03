@@ -18,7 +18,7 @@ First, start the Jupyter Kernel.
 jupyter notebook
 ```
 
-Afterwards, create a new notebook file. If you where using a virtual environment, choose the kernel of your virtual environment (**New** > **<kernel_name>**).
+Afterwards, create a new notebook file. If you where using a virtual environment, choose the kernel of your virtual environment (**New** > *kernel_name*).
 
 Finally, run the following in a Jupyter Notebook code cell:
 
