@@ -6,7 +6,7 @@ This markdown will help you install bamboolib based on your computer setup. What
 
 - I am using [pip virtualenv](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#installing-bamboolib-using-virtualenv)
 - I am using [conda virtual environment](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#installing-bamboolib-using-conda-environment)
-- [I don't use virtual environments / I don't know what a virtual environment is](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#pip-install)
+- [I don't use virtual environments / I don't know what a virtual environment is](https://github.com/tkrabel/bamboolib/blob/master/installation_walkthrough.md#installing-bamboolib-without-virtual-environment)
 
 
 In order to install bamboolib, you only need to do one thing.
