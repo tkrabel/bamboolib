@@ -4,9 +4,9 @@
 
 This markdown will help you install bamboolib based on your computer setup. What does you setup look like?
 
-- I am using [pip virtualenv](https://github.com/tkrabel/bamboolib/blob/master/installation.md#installing-bamboolib-using-virtualenv)
-- I am using [conda virtual environment](https://github.com/tkrabel/bamboolib/blob/master/installation.md#installing-bamboolib-using-conda-environment)
-- [I don't use virtual environments / I don't know what a virtual environment is](https://github.com/tkrabel/bamboolib/blob/master/installation.md#installing-bamboolib-without-virtual-environment)
+- I am using [pip virtualenv](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#installing-bamboolib-using-virtualenv)
+- I am using [conda virtual environment](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#installing-bamboolib-using-conda-environment)
+- [I don't use virtual environments / I don't know what a virtual environment is](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#installing-bamboolib-without-virtual-environment)
 
 
 In order to install bamboolib, you only need to do one thing.
@@ -57,7 +57,7 @@ jupyter nbextension install --py bamboolib --sys-prefix
 jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
-Then, restart your Jupyter notebook (make sure to shut down the server and start it over again) and try the code snippet from [above](https://github.com/tkrabel/bamboolib/blob/master/installation.md#test-the-library) again.
+Then, restart your Jupyter notebook (make sure to shut down the server and start it over again) and try the code snippet from [above](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library) again.
 
 ---------
 
@@ -111,7 +111,7 @@ deactivate
 
 ### 7. Test bamboolib
 
-Go [here](https://github.com/tkrabel/bamboolib/blob/master/installation.md#test-the-library).
+Go [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library).
 
 ------------
 
@@ -157,7 +157,7 @@ source deactivate
 
 ### 6. Test bamboolib
 
-Go [here](https://github.com/tkrabel/bamboolib/blob/master/installation.md#test-the-library).
+Go [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library).
 
 -----------
 
@@ -165,4 +165,4 @@ Go [here](https://github.com/tkrabel/bamboolib/blob/master/installation.md#test-
 
 From the terminal, you can install bamboolib with the pip install command that you received from us via mail.
 
-Afterwards, continue [here](https://github.com/tkrabel/bamboolib/blob/master/installation.md#test-the-library).
+Afterwards, continue [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library).
