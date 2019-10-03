@@ -65,12 +65,6 @@ Then, restart your Jupyter notebook (make sure to shut down the server and start
 
 If you manage your python packages using `virtualenv`, then follow these steps to install and use bamboolib in your virtual environment.
 
-### 0. pip install virtualenv if you haven't done already
-
-```bash
-pip install virtualenv
-```
-
 ### 1. Create a virtual environment for your project
 
 `<venv_name>` is the name you want to call your virtual environment.
