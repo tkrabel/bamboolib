@@ -15,15 +15,15 @@ In order to install bamboolib, you only need to do one thing.
 
 ## Test the library
 
-First, start the Jupyter Kernel ...
+First, start the Jupyter Kernel.
 
 ```bash
 jupyter notebook
 ```
 
-... and create a new notebook file. If you where using a virtual environment, choose the ipython kernel of your virtual environment.
+Afterwards, create a new notebook file. If you where using a virtual environment, choose the ipython kernel of your virtual environment.
 
-Finally, run the following in a cell:
+Finally, run the following in a Jupyter Notebook code cell:
 
 ```python
 import bamboolib as bam
@@ -39,7 +39,7 @@ You should see a GUI if everything worked fine. If you don't see anything, pleas
 ## Troubleshooting installation errors
 
 Please make sure that the following is correct:
-- you try to run bamboolib in a Jupyter Notebook. And not Jupyter Lab.
+- you try to run bamboolib in a Jupyter Notebook and not Jupyter Lab.
 - you opened the Jupyter Notebook in the Chrome or Firefox browser. You don't use the Internet Explorer.
 
 If the installation still doesn't work, you should try to [manually install the needed Jupyter Extensions](https://github.com/tkrabel/bamboolib/blob/master/Installation_walkthrough.md#manually-install-and-enable-jupyter-extensions).
