@@ -53,5 +53,8 @@ If you manage your python packages using `virtualenv`, then follow these steps t
 2. activate the venv: `source <venv_name>/bin/activate`
 3. install bamboolib
 5. add the ipython kernel to jupyter: `ipython kernel install --user --name=<any_name_you_want>`. Note that the name you choose will appear in the kernel list of your jupyter notebook.
+6. You can leave the virtual environment now with `deactivate`
+7. Open jupyter notebook (`jupyter notebook`)
+8. create a new ipython notebook file and choose the ipython kernel `<any_name_you_want>`.
 
-You should now be able to run bamboolib using the ipython kernel from your venv.s
+You should now be able to run bamboolib using the ipython kernel from your venv.
