@@ -64,7 +64,7 @@ If you manage your python packages using `virtualenv`, then follow these steps t
 
 ### 1. Create a virtual environment for your project
 
-`<venv_name>` is the name you want to call your virtual environment.
+In the terminal enter the following where `<venv_name>` is the name you want to call your virtual environment.
 
 ```bash
 virtualenv <venv_name>
@@ -116,7 +116,7 @@ Go [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-
 
 ### 1. Create a virtual environment for your project
 
-In the terminal client enter the following where <venv_name> is the name you want to call your environment.
+In the terminal enter the following where `<venv_name>` is the name you want to call your environment.
 
 ```bash
 conda create -n <venv_name>
@@ -126,7 +126,7 @@ Press y to proceed. This will install the Python version and all the associated 
 
 ### 2. Activate your virtual environment
 
-To activate or switch into your virtual environment, simply type the following where <venv_name> is the name you gave to your environement at creation.
+`<venv_name>` is the name you gave to your environement at creation.
 
 ```bash
 source activate <venv_name>
@@ -138,11 +138,11 @@ source activate <venv_name>
 conda install pip
 ```
 
-At this point you have two versions of pip installed; a global version and a version specific to your virtual environment. Please make sure that the command `which pip` returns a ath to the pip version of your virtual environment. If it doesn't do so, you will need to find the directory of your virtual environment, which will be somewhere like `/anaconda/envs/<venv_name>/`. You can install packages into your virtual environment with `/anaconda/envs/<venv_name>/bin/pip install <package_name>`.
+At this point you have two versions of pip installed; a global version and a version specific to your virtual environment. Please make sure that the command `which pip` returns a path to the pip version specific to your virtual environment. If it doesn't do so, you will need to specify pip with the full path to it when installing bamboolib into the virtual environment. See more in the next step.
 
 ### 4. Install bamboolib
 
-Use the pip install command we have send you via e-mail. Replace pip with your virtual environments pip version if necessary.
+Use the pip install command we have send you via e-mail. Replace pip with your virtual environments pip version if necessary (i.e. replace "pip install" with something similar to "/anaconda/envs/<venv_name>/bin/pip install").
 
 ### 5. Deactivate your virtual environment
 
