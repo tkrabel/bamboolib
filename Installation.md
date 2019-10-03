@@ -2,14 +2,11 @@
 
 **Please note:** bamboolib currently only supports Jupyter Notebook.
 
-This markdown will help you install bamboolib based on your computer setup. What does you setup look like?
+This markdown will help you install bamboolib based on your computer setup. What does your setup look like?
 
-- I am using [pip virtualenv](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#installing-bamboolib-using-virtualenv)
+- I am using (pip) [virtualenv](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#installing-bamboolib-using-virtualenv)
 - I am using [conda virtual environment](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#installing-bamboolib-using-conda-environment)
 - [I don't use virtual environments / I don't know what a virtual environment is](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#installing-bamboolib-without-virtual-environment)
-
-
-In order to install bamboolib, you only need to do one thing.
 
 --------
 
@@ -21,7 +18,7 @@ First, start the Jupyter Kernel.
 jupyter notebook
 ```
 
-Afterwards, create a new notebook file. If you where using a virtual environment, choose the ipython kernel of your virtual environment.
+Afterwards, create a new notebook file. If you where using a virtual environment, choose the kernel of your virtual environment (**New** > **<kernel_name>**).
 
 Finally, run the following in a Jupyter Notebook code cell:
 
@@ -83,11 +80,11 @@ source <venv_name>/bin/activate
 
 ### 3. Install bamboolib
 
-Use the pip install command we have send you via e-mail
+Use the pip install command we have send you via e-mail.
 
 ### 4. Add the IPython kernel to Jupyter
 
-`<display_name>` is the name that will appear in the kernel list of your Jupyter Notebook. You are not allowed to use spaces in `<display_name>`
+`<display_name>` is the name that will appear in the kernel list of your Jupyter Notebook. You are not allowed to use spaces in `<display_name>`.
 
 ```bash
 ipython kernel install --user --name=<display_name>
@@ -103,7 +100,7 @@ jupyter nbextension enable --py bamboolib --sys-prefix
 
 ### 6. Deactivate the virtual environment
 
-This step is optional, but recommended if you have different Jupyter versions between your user and your virtual environment.
+This step is optional. However it is recommended since you will likely have incompatibilities between the global Jupter version and the Jupyter version specific to your virtual environment.
 
 ```bash
 deactivate
