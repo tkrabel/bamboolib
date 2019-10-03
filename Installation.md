@@ -138,15 +138,15 @@ source activate <venv_name>
 conda install pip
 ```
 
-At this point you have two versions of pip installed; a global version and a version specific to your virtual environment. Please make sure that the command `which pip` returns a path to the pip version specific to your virtual environment. If it doesn't do so, you will need to specify pip with the full path to it when installing bamboolib into the virtual environment. See more in the next step.
+At this point you have two versions of pip installed; a global version and a version specific to your virtual environment. Please make sure that the command `which pip` returns a path to the pip version specific to your virtual environment (something similar to "anaconda/envs/<venv_name>/bin/pip"). If it doesn't do so, you will need to change the `pip install` command in the following step.
 
 ### 4. Install bamboolib
 
-Use the pip install command we have send you via e-mail. Replace pip with your virtual environments pip version if necessary (i.e. replace "pip install" with something similar to "/anaconda/envs/<venv_name>/bin/pip install").
+Use the pip install command we have send you via e-mail.
+
+In case `which pip` didn't show the correct path, you need to replace "pip" with the absolute path to your virtual environment's pip (i.e. replace "**pip** install" with something similar to "**/anaconda/envs/<venv_name>/bin/pip** install").
 
 ### 5. Deactivate your virtual environment
-
-To end a session in the current environment, enter the following.
 
 ```bash
 source deactivate
