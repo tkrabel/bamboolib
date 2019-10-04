@@ -18,7 +18,7 @@ First, start the Jupyter Kernel.
 jupyter notebook
 ```
 
-Afterwards, create a new notebook file. If you where using a virtual environment, choose the kernel of your virtual environment (**New** > *kernel_name*).
+Afterwards, create a new notebook file. If you were using a virtual environment, choose the kernel of your virtual environment (**New** > *kernel_name*).
 
 Finally, run the following in a Jupyter Notebook code cell:
 
@@ -56,6 +56,14 @@ jupyter nbextension enable --py bamboolib --sys-prefix
 
 Then, restart your Jupyter notebook (make sure to shut down the server and start it over again) and try the code snippet from [above](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library) again.
 
+-----------
+
+## Installing bamboolib without virtual environment
+
+Open your terminal and install bamboolib with the pip install command that you received from us via mail.
+
+Afterwards, continue [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library).
+
 ---------
 
 ## Installing bamboolib using virtualenv
@@ -87,7 +95,7 @@ Use the pip install command we have send you via e-mail.
 `<display_name>` is the name that will appear in the kernel list of your Jupyter Notebook. You are not allowed to use spaces in `<display_name>`.
 
 ```bash
-ipython kernel install --user --name=<display_name>
+ipython kernel install --name=<display_name>
 ```
 
 ### 5. Install the bamboolib jupyter extension
@@ -129,37 +137,37 @@ Press y to proceed. This will install the Python version and all the associated 
 `<venv_name>` is the name you gave to your environement at creation.
 
 ```bash
-source activate <venv_name>
+conda activate <venv_name>
 ```
 
-### 3. Install pip in your virtual environment
+### 3. Install pip and ipykernel in your virtual environment
 
 ```bash
 conda install pip
+conda install ipykernel
 ```
 
 At this point you have two versions of pip installed; a global version and a version specific to your virtual environment. Please make sure that the command `which pip` returns a path to the pip version specific to your virtual environment (something similar to "anaconda/envs/<venv_name>/bin/pip"). If it doesn't do so, you will need to change the `pip install` command in the following step.
 
 ### 4. Install bamboolib
 
-Use the pip install command we have send you via e-mail.
-
-In case `which pip` didn't show the correct path, you need to replace "pip" with the absolute path to your virtual environment's pip (i.e. replace "**pip** install" with something similar to "**/anaconda/envs/<venv_name>/bin/pip** install").
-
-### 5. Deactivate your virtual environment
+First, check if you use the correct pip version (the one specific to your virtual environment). To do so, type
 
 ```bash
-source deactivate
+which pip
+```
+
+You sould read a path that contains the name of your virtual environment (something similar to "anaconda/envs/<venv_name>/bin/pip"). There are two cases:
+
+- `which pip` contains your virtual environment: In this case, you can simply use the pip install command we have send you via e-mail.
+- `which pip` doesn't show the correct path: In this case, you need to replace "pip" in the pip install command with the absolute path to your virtual environment's pip, i.e. replace "**pip** install" with something similar to "**/anaconda/envs/<venv_name>/bin/pip** install".
+
+### 5. Add the IPython kernel to Jupyter
+
+```bash
+python -m ipykernel install --user --name <venv_name> --display-name "<venv_name>"
 ```
 
 ### 6. Test bamboolib
 
 Go [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library).
-
------------
-
-## Installing bamboolib without virtual environment
-
-Open your terminal and install bamboolib with the pip install command that you received from us via mail.
-
-Afterwards, continue [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library).
