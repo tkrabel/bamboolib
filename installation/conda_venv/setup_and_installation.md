@@ -23,8 +23,6 @@ conda install pip
 conda install ipykernel
 ```
 
-At this point you have two versions of pip installed; a global version and a version specific to your virtual environment. Please make sure that the command `which pip` returns a path to the pip version specific to your virtual environment (something similar to "anaconda/envs/bamboolib_venv/bin/pip"). If it doesn't do so, you will need to change the `pip install` command in the following step.
-
 ### 4. Install bamboolib
 
 First, check if you use the correct pip version (the one specific to your virtual environment). To do so, type
