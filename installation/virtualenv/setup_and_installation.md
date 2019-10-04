@@ -44,4 +44,4 @@ deactivate
 
 ### 7. Test bamboolib
 
-Go [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library).
+Go [here](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/with_virtual_environment.md#test-the-library).

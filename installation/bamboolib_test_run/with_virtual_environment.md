@@ -17,4 +17,4 @@ df = bam.get_titanic_df()  # the titanic pd.DataFrame with 891 rows and 12 colum
 bam.show(df)
 ```
 
-You should see a GUI if everything worked fine. If you don't see anything, please read [here]().
+You should see a GUI if everything worked fine. If you don't see anything, please read [here](https://github.com/tkrabel/bamboolib/blob/master/installation/troubleshooting/troubleshooting.md#troubleshooting-installation-errors).

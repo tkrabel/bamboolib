@@ -4,4 +4,4 @@ Open your terminal and install bamboolib with the pip install command that you r
 
 If you get an error similar to `"bad interpreter"`, please use pip3 instead.
 
-Afterwards, continue [here](https://github.com/tkrabel/bamboolib/blob/master/Installation.md#test-the-library).
+Afterwards, continue [here](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library).
