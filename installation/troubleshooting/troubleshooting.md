@@ -3,6 +3,7 @@
 Please make sure that the following is correct:
 - you try to run bamboolib in a Jupyter Notebook and not Jupyter Lab.
 - you opened the Jupyter Notebook in the Chrome or Firefox browser. You don't use the Internet Explorer.
+- the ipython notebook file you are working with is **not** called "bamboolib".
 
 If the installation still doesn't work, please continue reading.
 
