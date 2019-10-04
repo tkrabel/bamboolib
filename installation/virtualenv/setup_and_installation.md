@@ -20,7 +20,7 @@ Use the pip install command we have send you via e-mail.
 
 ### 4. Add the IPython kernel to Jupyter
 
-`bamboolib_venv` is the name that will appear in the kernel list of your Jupyter Notebook. Please change this if you want to have a different kernel name.
+`bamboolib_venv` is the name that will appear in the kernel list of your Jupyter Notebook. Please change it if you want to have a different kernel name.
 
 ```bash
 ipython kernel install --name=bamboolib_venv

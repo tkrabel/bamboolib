@@ -2,7 +2,7 @@
 
 ### 1. Create a virtual environment for your project
 
-In the terminal enter the following where `bamboolib_venv` is the name you want to call your environment.
+In the terminal enter the following where `bamboolib_venv` is the name of the virtual environment. Please change it if you want name your virtual environment differently.
 
 ```bash
 conda create -n bamboolib_venv
@@ -11,8 +11,6 @@ conda create -n bamboolib_venv
 Press y to proceed. This will install the Python version and all the associated anaconda packaged libraries at `<path_to_your_anaconda_location>/anaconda/envs/bamboolib_venv`
 
 ### 2. Activate your virtual environment
-
-`bamboolib_venv` is the name you gave to your environement at creation.
 
 ```bash
 conda activate bamboolib_venv
@@ -43,7 +41,7 @@ You sould read a path that contains the name of your virtual environment (someth
 ### 5. Add the IPython kernel to Jupyter
 
 ```bash
-python -m ipykernel install --user --name bamboolib_venv --display-name "bamboolib_venv"
+python -m ipykernel install --user --name bamboolib_venv
 ```
 
 ### 6. Test bamboolib
