@@ -1,6 +1,6 @@
 ## Test the library
 
-First, start the Jupyter Kernel. **Jupyter Lab is currently not supported!**
+First, start the Jupyter Kernel (**Jupyter Lab is currently not supported!**).
 
 ```bash
 jupyter notebook
