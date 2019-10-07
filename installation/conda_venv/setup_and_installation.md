@@ -19,8 +19,8 @@ conda activate bamboolib_venv
 ### 3. Install pip and ipykernel in your virtual environment
 
 ```bash
-conda install pip
-conda install ipykernel
+conda install pip -y
+conda install ipykernel -y
 ```
 
 ### 4. Install bamboolib
