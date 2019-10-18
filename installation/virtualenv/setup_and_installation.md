@@ -23,7 +23,7 @@ Use the `pip install` command we have send you via e-mail.
 From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
 ```bash
-jupyter nbextension enable --py qgrid
+jupyter nbextension enable --py qgrid --sys-prefix
 ```
 
 ### 5. Add the IPython kernel to Jupyter

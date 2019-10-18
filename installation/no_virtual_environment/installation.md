@@ -11,7 +11,7 @@ If you get an error similar to `"bad interpreter"`, please use pip3 instead.
 From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
 ```bash
-jupyter nbextension enable --py qgrid
+jupyter nbextension enable --py qgrid --sys-prefix
 ```
 
 ### 3. Test bamboolib

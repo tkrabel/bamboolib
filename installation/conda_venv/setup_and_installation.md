@@ -38,7 +38,7 @@ In this case you need to replace `pip` with the absolute path to your conda env'
 From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
 ```bash
-jupyter nbextension enable --py qgrid
+jupyter nbextension enable --py qgrid --sys-prefix
 ```
 
 ### 6. Add the IPython kernel to Jupyter
