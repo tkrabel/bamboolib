@@ -5,10 +5,8 @@
 In the terminal enter the following where `bamboolib_venv` is the name of the virtual environment. Please change it if you want name your virtual environment differently.
 
 ```bash
-conda create -n bamboolib_venv
+conda create -n bamboolib_venv -y
 ```
-
-Press y to proceed. This will install the Python version and all the associated anaconda packaged libraries at `<path_to_your_anaconda_location>/anaconda/envs/bamboolib_venv`
 
 ### 2. Activate your virtual environment
 
@@ -25,23 +23,31 @@ conda install ipykernel -y
 
 ### 4. Install bamboolib
 
-First, check if you use the correct pip version (the one specific to your virtual environment). To do so, type
+Use the `pip install` command we have send you via e-mail.
+
+#### bamboolib wasn't installed into your conda env?
+
+In this case you need to replace `pip` with the absolute path to your conda env's pip
 
 ```bash
-which pip
+<path_to_your_anaconda_location>/envs/bamboolib_venv/bin/pip install ...  # use the rest from the e-mail
 ```
 
-You sould read a path that contains the name of your virtual environment (something similar to "anaconda/envs/bamboolib_venv/bin/pip"). There are two cases:
+### 5. Setup Jupyter extensions
 
-- `which pip` contains the virtual environment name: In this case, you can simply use the pip install command we have send you via e-mail.
-- `which pip` **doesn't show the correct path**: In this case, you need to replace "pip" in the pip install command with the absolute path to your virtual environment's pip, i.e. replace "**pip** install" with something similar to "**/anaconda/envs/bamboolib_venv/bin/pip** install".
+From the terminal, you need to setup the Jupyter Notebook extensions via the following commands:
 
-### 5. Add the IPython kernel to Jupyter
+```bash
+jupyter nbextension enable --py widgetsnbextension
+jupyter nbextension enable --py qgrid
+```
+
+### 6. Add the IPython kernel to Jupyter
 
 ```bash
 python -m ipykernel install --user --name bamboolib_venv
 ```
 
-### 6. Test bamboolib
+### 7. Test bamboolib
 
 Go [here](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/with_virtual_environment.md#test-the-library).
