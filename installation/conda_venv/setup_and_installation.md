@@ -35,10 +35,9 @@ In this case you need to replace `pip` with the absolute path to your conda env'
 
 ### 5. Setup Jupyter extensions
 
-From the terminal, you need to setup the Jupyter Notebook extensions via the following commands:
+From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
 ```bash
-jupyter nbextension enable --py widgetsnbextension
 jupyter nbextension enable --py qgrid
 ```
 

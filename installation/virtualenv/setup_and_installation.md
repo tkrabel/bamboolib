@@ -20,7 +20,7 @@ Use the `pip install` command we have send you via e-mail.
 
 ### 4. Setup Jupyter extensions
 
-From the terminal, you need to setup the Jupyter Notebook extensions via the following commands:
+From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
 ```bash
 jupyter nbextension enable --py qgrid

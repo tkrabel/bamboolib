@@ -8,7 +8,7 @@ If you get an error similar to `"bad interpreter"`, please use pip3 instead.
 
 ### 2. Install widgets dependencies
 
-From the terminal, you need to setup the Jupyter Notebook extensions via the following commands:
+From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
 ```bash
 jupyter nbextension enable --py qgrid
