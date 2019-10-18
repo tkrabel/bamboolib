@@ -1,9 +1,9 @@
 ## Test the library
 
-First, start the Jupyter Kernel (**Jupyter Lab is currently not supported!**).
+First, start a Jupyter Notebook
 
 ```bash
-jupyter notebook
+jupyter notebook  # JUPYTER LAB IS NOT SUPPORTED CURRENTLY!
 ```
 
 Afterwards, create a new notebook file.
