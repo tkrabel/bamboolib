@@ -8,7 +8,7 @@ From the terminal, you can install bamboolib with the `pip install` command that
 USE PIP COMMAND FROM E-MAIL
 ```
 
-If you get an error similar to `"bad interpreter"`, please use pip3 instead.
+If you get an error like `"bad interpreter"`, use pip3 instead.
 
 ### 2. Setup Jupyter extensions
 
