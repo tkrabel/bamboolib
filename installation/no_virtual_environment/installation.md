@@ -4,9 +4,13 @@
 
 From the terminal, you can install bamboolib with the `pip install` command that you received from us via mail.
 
+```bash
+USE PIP COMMAND FROM E-MAIL
+```
+
 If you get an error similar to `"bad interpreter"`, please use pip3 instead.
 
-### 2. Install widgets dependencies
+### 2. Setup Jupyter extensions
 
 From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
