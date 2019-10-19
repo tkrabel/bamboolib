@@ -4,7 +4,6 @@ Please make sure that the following is correct:
 - you used a Jupyter Notebook and not Jupyter Lab.
 - you opened the Jupyter Notebook with Google Chrome or Firefox. You don't use Internet Explorer.
 - the ipython notebook file you are working with is **not** called "bamboolib".
-- the virtual environment you created has a name that is different from your other virtual environments.
 
 If the installation still doesn't work, please continue reading.
 
@@ -23,3 +22,16 @@ jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
 Then, restart your Jupyter notebook (make sure to shut down the server and start it over again) and run the code snippet again.
+
+## Uninstall and reinstall ipykernel
+
+If you created e.g. a virtual environment `bamboolib_venv` and you already had a virtual environment with that name, you need to uninstall the ipykernel first before you re-install it.
+
+```bash
+# uninstall ipykernel
+jupyter kernelspec uninstall bamboolib_venv
+
+# re-install
+# python -m ipykernel install --user --name bamboolib_venv  # CONDA ENV
+# ipython kernel install --user --name=bamboolib_venv       # VIRTUALENV
+```
