@@ -1,7 +1,5 @@
 # Installation of bamboolib
 
-**Please note:** bamboolib currently only supports Jupyter Notebook.
-
 This markdown will help you install bamboolib based on your computer setup. What does your setup look like?
 
 - I use Anaconda or pip and want to do [a "normal" installation / I don't use virtual environments](https://github.com/tkrabel/bamboolib/blob/master/installation/no_virtual_environment/installation.md#installing-bamboolib-without-virtual-environment)
