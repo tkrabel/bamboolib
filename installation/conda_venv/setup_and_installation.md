@@ -36,6 +36,9 @@ From the terminal, you need to setup the Jupyter Notebook extensions via the fol
 
 ```bash
 jupyter nbextension enable --py qgrid --sys-prefix
+jupyter nbextension enable --py widgetsnbextension --sys-prefix
+jupyter nbextension install --py bamboolib --sys-prefix
+jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
 ### 4. Test bamboolib
