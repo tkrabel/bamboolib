@@ -13,10 +13,8 @@ ipython kernel install --user --name=bamboolib_venv
 
 ### 2. Install bamboolib
 
-Use the `pip install` command we have send you via e-mail.
-
 ```bash
-USE PIP COMMAND FROM E-MAIL
+pip install bamboolib
 ```
 
 ### 3. Setup Jupyter extensions

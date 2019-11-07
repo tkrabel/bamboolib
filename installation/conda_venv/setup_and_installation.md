@@ -16,10 +16,8 @@ python -m ipykernel install --user --name bamboolib_venv  # Add the IPython kern
 
 ### 2. Install bamboolib
 
-Use the `pip install` command we have send you via e-mail.
-
 ```bash
-USE PIP COMMAND FROM E-MAIL
+pip install bamboolib
 ```
 
 #### bamboolib wasn't installed into your conda env?
