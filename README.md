@@ -2,7 +2,7 @@
 
 bamboolib is a graphical user interface for pandas dataframes in Jupyter Notebook or Jupyter Lab.
 
-## [Join our mailing list if you want this library to become reality](https://bamboolib.com)
+## [Join our mailing list if you want to stay updated about the state of bamboolib](https://bamboolib.com)
 
 
 The main benefits of bamboolib will be:
