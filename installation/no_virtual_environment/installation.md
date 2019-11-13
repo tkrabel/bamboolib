@@ -1,4 +1,4 @@
-## Installing bamboolib without virtual environment
+## Installing bamboolib
 
 ### 1. Install bamboolib
 
