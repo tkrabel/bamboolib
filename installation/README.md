@@ -5,5 +5,7 @@
 
 ## Advanced: using a virtual environment
 
+If you want to install a library with Jupyter Notebook extensions in a virtual environment you need to perform some additional steps. We added the steps in the following tutorials:
+
 - I want to install bamboolib inside a [virtualenv](https://github.com/tkrabel/bamboolib/blob/master/installation/virtualenv/setup_and_installation.md#installing-bamboolib-using-virtualenv)
 - I want to install bamboolib inside a [conda **virtual** environment](https://github.com/tkrabel/bamboolib/blob/master/installation/conda_venv/setup_and_installation.md#installing-bamboolib-using-conda-environment)
