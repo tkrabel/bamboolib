@@ -2,6 +2,7 @@
 
 ### 1. Install bamboolib
 
+From the terminal, execute the pip install:
 ```bash
 pip install bamboolib
 ```
@@ -19,4 +20,4 @@ jupyter nbextension enable --py bamboolib --sys-prefix
 
 ### 3. Test bamboolib
 
-Go [here](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library).
+__[Continue here](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library)__
