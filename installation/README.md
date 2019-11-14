@@ -1,5 +1,7 @@
 # Installation of bamboolib
 
+In order to use bamboolib on private data, you need to buy a license. You can buy a license [here](https://bamboolib.com/pricing).
+
 ## Default: normal installation
 - [Get started using pip](https://github.com/tkrabel/bamboolib/blob/master/installation/no_virtual_environment/installation.md#installing-bamboolib-without-virtual-environment)
 
