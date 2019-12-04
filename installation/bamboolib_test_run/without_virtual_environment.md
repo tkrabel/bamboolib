@@ -1,9 +1,10 @@
 ## Test the library
 
-First, start a Jupyter Notebook
+First, start Jupyter Notebook or Jupyter Lab
 
 ```bash
-jupyter notebook  # JUPYTER LAB IS NOT SUPPORTED CURRENTLY!
+jupyter notebook
+# jupyter lab
 ```
 
 Afterwards, create a new notebook file.
