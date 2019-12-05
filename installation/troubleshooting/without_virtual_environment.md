@@ -2,11 +2,11 @@
 
 Please make sure that the following is correct:
 
-- you used
+- You used
     - Jupyter Notebook version 5.3.0 or higher or
     - Jupyter Lab version 1.0 or higher (enter `pip list` in your terminal to find out).
-- you opened the ipython notebook with Google Chrome or Firefox. You don't use Internet Explorer.
-- the ipython notebook file (`.ipynb` file) you are working with is **not** called "bamboolib".
+- You opened the ipython notebook with Google Chrome or Firefox. You don't use Internet Explorer.
+- The ipython notebook file (`.ipynb` file) you are working with is **not** called "bamboolib".
 - After the installation of bamboolib and the Jupyter extensions you shut down your Jupyter Notebook/Lab server (not only the kernel) and re-started it.
 
 <!-- If the installation still doesn't work, please continue reading.
