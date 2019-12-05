@@ -24,7 +24,7 @@ jupyter nbextension enable --py bamboolib --sys-prefix
 
 **We only support Jupyter Lab version 1.0 or higher.**
 
-First, you need to install the jupyterlab-manager. Make sure that the jupyterlab-manager version is [compatible with your Jupyter Lab version](https://github.com/jupyter-widgets/ipywidgets/tree/jupyterlab_branch/packages/jupyterlab-manager#version-compatibility).
+First, you need to install the jupyterlab-manager. Make sure that the jupyterlab-manager version is [compatible with your Jupyter Lab version](https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager#version-compatibility).
 
 Replace the command below with the correct jupyterlab-manager version and paste it into your terminal:
 
@@ -47,4 +47,4 @@ jupyter lab build --minimize=False
 
 ### 3. Test bamboolib
 
-__[Continue here](https://github.com/tkrabel/bamboolib/blob/jupyterlab_branch/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library)__
+__[Continue here](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library)__
