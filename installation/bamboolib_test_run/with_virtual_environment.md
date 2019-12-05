@@ -9,7 +9,7 @@ jupyter notebook
 
 Afterwards, create a new notebook choosing the *bamboolib_venv* kernel (**New** > *bamboolib_venv*).
 
-Finally, run the following in a Jupyter Notebook code cell:
+Finally, run the following in a Jupyter Notebook / Lab code cell:
 
 ```python
 import bamboolib as bam
