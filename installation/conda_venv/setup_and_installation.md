@@ -5,7 +5,7 @@
 In the terminal enter the following where `bamboolib_venv` is the name of the virtual environment. Please change it if you want name your virtual environment differently.
 
 ```bash
-conda create -n bamboolib_venv -y
+conda create -n bamboolib_venv python=3.7 -y
 conda activate bamboolib_venv
 
 conda install pip -y
