@@ -43,7 +43,7 @@ jupyter labextension list
 
 Then, replace the command below with the [compatible jupyterlab-manager version](https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager#version-compatibility) and execute it from your terminal.
 
-For example, for JupyterLab 1.0.x and 1.1.x, use `jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.0`
+For example, for JupyterLab 1.0.x and 1.1.x, you need to install jupyterlab-manager 1.0
 
 ```bash
 # Click the link above to find the right version of jupyterlab-manager
