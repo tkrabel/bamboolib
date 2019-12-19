@@ -13,7 +13,7 @@ __[Try the live demo](https://bamboolib.com/demo)__
 
 ## bamboolib tutorial
 
-For a nice bamboolib tutorial, read this [Medium article](https://towardsdatascience.com/bamboolib-learn-and-use-pandas-without-coding-23a7d3a94e1b)
+For a nice bamboolib tutorial, read this [Medium article](https://towardsdatascience.com/bamboolib-learn-and-use-pandas-without-coding-23a7d3a94e1b).
 
 ## Further links
 
