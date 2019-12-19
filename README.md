@@ -1,4 +1,5 @@
-# Community repository of bamboolib - a GUI for pandas [![](https://img.shields.io/badge/python-3.6-blue.svg)](https://bamboolib.com) [![](https://img.shields.io/badge/python-3.7-orange.svg)](https://bamboolib.com)
+# Community repository of bamboolib - a GUI for pandas
+[![](https://img.shields.io/badge/python-3.6-blue.svg)](https://bamboolib.com) [![](https://img.shields.io/badge/python-3.7-orange.svg)](https://bamboolib.com)
 
 This is the community repository of [bamboolib](https://bamboolib.com/). There are no source files because bamboolib is closed source. However, you can [use bamboolib for free on Open Data](https://bamboolib.com/get-started). If you have any issues or feature requests, please open an issue.
 
