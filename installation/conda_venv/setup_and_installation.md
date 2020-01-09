@@ -2,7 +2,7 @@
 
 ### 0. Setup a virtual environment for your project
 
-In the terminal enter the following where `bamboolib_venv` is the name of the virtual environment. Please change it if you want name your virtual environment differently.
+In the terminal (or Anaconda Prompt if you use Windows) enter the following where `bamboolib_venv` is the name of the virtual environment. Please change it if you want name your virtual environment differently.
 
 ```bash
 conda create -n bamboolib_venv python=3.7 -y
@@ -16,7 +16,7 @@ python -m ipykernel install --user --name bamboolib_venv  # Add the IPython kern
 
 ### 1. pip install
 
-From the terminal, execute the pip install:
+From the terminal (Or Anaconda Prompt if you use Windows), execute the pip install:
 ```bash
 pip install bamboolib
 ```
