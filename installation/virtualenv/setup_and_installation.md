@@ -13,7 +13,7 @@ ipython kernel install --user --name=bamboolib_venv
 
 ### 1. pip install
 
-From the terminal (Or Anaconda Prompt if you use Windows), execute the pip install:
+From the terminal (or Anaconda Prompt if you use Windows), execute the pip install:
 ```bash
 pip install bamboolib
 ```

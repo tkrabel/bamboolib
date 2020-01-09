@@ -6,7 +6,7 @@ There are 2 steps:
 
 ### 1. pip install
 
-From the terminal (Or Anaconda Prompt if you use Windows), execute the pip install:
+From the terminal (or Anaconda Prompt if you use Windows), execute the pip install:
 ```bash
 pip install bamboolib
 ```
