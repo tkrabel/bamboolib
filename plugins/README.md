@@ -14,7 +14,7 @@ Starting with version 1.3.0 bamboolib enables you to write custom transformation
 
 1) make sure that you are running bamboolib 1.3.0 or higher. You can check this via running: `bam.__version__` If you need to upgrade, please [follow this guide](https://docs.bamboolib.8080labs.com/how-tos/update-to-a-new-version-of-bamboolib)
 
-2) write your own plugin or copy an example
+2) write your own plugin or [copy an example](https://github.com/tkrabel/bamboolib/tree/master/plugins/examples)
 
 3) execute the plugin code
 
@@ -38,4 +38,47 @@ Therefore, there are __multiple alternatives__ how to permanently add your plugi
 Do you have __another idea__ on how to always execute your plugins? Let us know via the issues. Your approach might be helpful to others as well :)
 
 
+## Plugin architecture
+
+If you want to build the plugins of your dreams, you basically need 2 ingredients:
+1. the bamboolib internals that `bamboolib.plugins` provides to you
+2. any of the user interface elements of [ipywidgets](https://github.com/jupyter-widgets/ipywidgets)
+
+
 ## Reference
+
+For more infos on how to use the internals, please check the examples.
+
+### bamboolib.plugins.TransformationPlugin
+
+__Methods that you can OVERRIDE:__
+- __get_code__: this is the __bare minimum__ that is required. You need to return a string that contains Python code.
+- __render__: for adding custom user interface elements
+- __is_valid_transformation__: return True or False or even raise exceptions
+- __get_description__: return a description of the transformation that is shown in the history
+
+
+__Helpers that you might want to USE:__
+
+__Methods:__
+- set_title
+- set_content
+- get_df
+- get_name_of_df
+- ADVANCED
+    - update_code_preview
+    - get_final_code
+    - execute
+
+__Attributes:__
+- rename_df_group
+- code_preview_group
+- spacer
+- new_df_name_input
+
+### bamboolib.plugins.ColumnTransformationPlugin
+### bamboolib.plugins.SelectizeWidget
+### bamboolib.plugins.SelectizeDropdown
+### bamboolib.plugins.DF_OLD
+### bamboolib.plugins.DF_NEW
+### bamboolib.plugins.list_to_string
