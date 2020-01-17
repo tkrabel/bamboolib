@@ -23,22 +23,17 @@ Starting with version 1.3.0 bamboolib enables you to write custom transformation
 
 ## How to permanently add my plugin to bamboolib?
 
-__Plugins are added to bamboolib after you execute the plugin code.__
+3 things you should know about how plugins work:
+- __Plugins are added to bamboolib after you execute the plugin code.__
+- If you add a plugin, it will be available as long as the Python kernel is running.
+- If you restart your Python kernel, the plugin will no longer be available.
 
+Therefore, there are __multiple alternatives__ how to permanently add your plugin:
+1. Put the plugin code into a Python file in the IPython auto startup folder which is located in your home directory at `~/.ipython/profile_default/startup` This code is run by IPython every time you start a new Jupyter Python kernel.
+2. Put the plugin code into a Python package and quickly import the package at the top of your Jupyter Notebook. For example, you can quickly create a new Python package with pyscaffold [pyscaffold](https://github.com/pyscaffold/pyscaffold). You might also want to upload your own plugin package to a private or public GitHub repository and collaborate with others to make sure that you will always have the best plugins available for your use case.
+3. Combine the alternatives 1. and 2. via adding the import to your package to the IPython auto-import.
+4. Just add the plugin code at the top of your Jupyter Notebook. This is a little bit clunky to do it for every new notebook but it would work.
 
-__That means:__
-If you add a plugin, it will be available as long as the Python kernel is running.
-
-If you restart your Python kernel, the plugin will no longer be available.
-
-
-__How to permanently add your plugin to bamboolib?__
-There are __many options__. You just need to make sure that the __plugin code is executed__.
-Here are some of the most popular options:
-
-- Put the plugin code into a Python file in the IPython auto startup folder which is located in your home directory at `~/.ipython/profile_default/startup` This code is run by IPython every time you start a new Jupyter Python kernel.
-- Put the plugin code into a Python package and import the package at the top of your Jupyter Notebook. For example, you can quickly create a new Python package with pyscaffold [pyscaffold](https://github.com/pyscaffold/pyscaffold). You might also want to upload your own plugin package to a private or public GitHub repository and collaborate with others to make sure that you will always have the best plugins available for your use case.
-- Just add the plugin code at the top of your Jupyter Notebook. This is a little bit clunky but it would work.
 
 Do you have __another idea__ on how to always execute your plugins? Let us know via the issues. Your approach might be helpful to others as well :)
 
