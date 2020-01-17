@@ -2,10 +2,10 @@
 
 ### 0. Setup a virtual environment for your project
 
-In the terminal enter the following where `bamboolib_venv` is the name of the virtual environment. Please change it if you want name your virtual environment differently.
+In the terminal (or Anaconda Prompt if you use Windows) enter the following where `bamboolib_venv` is the name of the virtual environment. Please change it if you want name your virtual environment differently.
 
 ```bash
-conda create -n bamboolib_venv -y
+conda create -n bamboolib_venv python=3.7 -y
 conda activate bamboolib_venv
 
 conda install pip -y
@@ -16,7 +16,7 @@ python -m ipykernel install --user --name bamboolib_venv  # Add the IPython kern
 
 ### 1. pip install
 
-From the terminal, execute the pip install:
+From the terminal (or Anaconda Prompt if you use Windows), execute the pip install:
 ```bash
 pip install bamboolib
 ```
@@ -51,10 +51,13 @@ You can determine your Jupyter Lab version via typing in the following in your t
 jupyter labextension list
 ```
 
-Then, replace the command below with the [compatible jupyterlab-manager version](https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager#version-compatibility) and execute it from your terminal:
+Then, replace the command below with the [compatible jupyterlab-manager version](https://github.com/jupyter-widgets/ipywidgets/tree/master/packages/jupyterlab-manager#version-compatibility) and execute it from your terminal.
+
+For example, for JupyterLab 1.0.x and 1.1.x, you need to install jupyterlab-manager 1.0
 
 ```bash
-# Click the link above to find the right version, e.g. 1.0, 1.1, 1.2, ...
+# Click the link above to find the right version of jupyterlab-manager
+# MAJOR_VERSION.MINOR_VERSION IS NOT NECESSARILLY EQUAL TO YOUR JUPYTERLAB VERSION
 jupyter labextension install @jupyter-widgets/jupyterlab-manager@MAJOR_VERSION.MINOR_VERSION --no-build
 ```
 
