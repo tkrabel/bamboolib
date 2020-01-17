@@ -1,4 +1,4 @@
-# Work in Progress: Plugins - add your own transformations
+# Plugins - add your own transformations
 
 > __Beta:__ Plugins are currently in Beta and the API is not stable yet. Please expect that the API might change to some extent. However, we will try to minimize any changes and provide backwards compatibility.
 
