@@ -81,4 +81,3 @@ __Attributes:__
 ### bamboolib.plugins.SelectizeDropdown
 ### bamboolib.plugins.DF_OLD
 ### bamboolib.plugins.DF_NEW
-### bamboolib.plugins.list_to_string
