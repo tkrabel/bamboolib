@@ -6,8 +6,7 @@
 - Are you __missing a special transformation__ in bamboolib?
 - Do you want to provide __custom transformations for your team__?
 
-
-Starting with version 1.3.0 bamboolib enables you to write custom transformation plugins.
+bamboolib enables you to quickly add plugins or even write your own plugins based on your specific needs.
 
 
 ## Get started
@@ -52,23 +51,23 @@ For more infos on how to use the internals, please check the examples.
 ### bamboolib.plugins.TransformationPlugin
 
 __Methods that you can OVERRIDE:__
-- __get_code__: this is the __bare minimum__ that is required. You need to return a string that contains Python code.
-- __render__: for adding custom user interface elements
-- __is_valid_transformation__: return True or False or even raise exceptions
-- __get_description__: return a description of the transformation that is shown in the history
+- __get_code()__: this is the __bare minimum__ that is required. You need to return a string that contains Python code.
+- __render()__: for adding custom user interface elements
+- __is_valid_transformation()__: return True or False or even raise exceptions
+- __get_description()__: return a description of the transformation that is shown in the history
 
 
 __Helpers that you might want to USE:__
 
 __Methods:__
-- set_title
-- set_content
-- get_df
-- get_name_of_df
+- set_title()
+- set_content()
+- get_df()
+- get_name_of_df()
 - ADVANCED
-    - update_code_preview
-    - get_final_code
-    - execute
+    - update_code_preview()
+    - get_final_code()
+    - execute()
 
 __Attributes:__
 - rename_df_group
@@ -77,7 +76,36 @@ __Attributes:__
 - new_df_name_input
 
 ### bamboolib.plugins.ColumnTransformationPlugin
+
+The same as `bamboolib.plugins.TransformationPlugin` except for 2 differences:
+1. it is only shown in the column menu (when clicking on a column)
+2. it receives a `column` keyword argument in the constructor
+
 ### bamboolib.plugins.SelectizeWidget
+
+- Custom widget that allows the user to select 1 or multiple values.
+
+
+- `value` attribute contains a list of the selected values.
+
 ### bamboolib.plugins.SelectizeDropdown
+
+- Custom widget that allows the user to select 1 specific value.
+
+- `value` attribute contains the selected value.
+
+
 ### bamboolib.plugins.DF_OLD
+
+- Placeholder that you __NEED to use__ within `get_code()`
+
+- At runtime, bamboolib will replace the placeholder with the name of the current dataframe.
+
 ### bamboolib.plugins.DF_NEW
+
+- Placeholder that you __CAN use__ within `get_code()`
+
+- At runtime, bamboolib will replace the placeholder with the new name of the current dataframe.
+The new name can be specified by the user inside the `rename_df_group` input element.
+
+> Attention: the renaming will only work if you add `self.rename_df_group` to `self.set_content()`
