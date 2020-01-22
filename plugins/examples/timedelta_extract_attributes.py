@@ -1,25 +1,31 @@
 # %% [markdown]
-# # Extracting attributes from timedelta columns, like weeks or days via a ColumnTransformation plugin
+# import numpy as np
+# # ^^^ pyforest auto-imports - don't write above this line
+# # Extracting attributes from timedelta columns via a ColumnTransformationPlugin
 #
-# inspired by the following stackoverflow question:
-# https://stackoverflow.com/questions/38355816/pandas-add-timedelta-column-to-datetime-column-vectorized
+# inspired by Sailu and the following stackoverflow question:
+# - https://stackoverflow.com/questions/38355816/pandas-add-timedelta-column-to-datetime-column-vectorized
+#
+# __Goal:__ extract the number of weeks as float based on the timedelta column
 
 # %%
 import pandas as pd
 import bamboolib as bam
 
-df = pd.DataFrame([['2016-01-10',28],['2016-05-11',28],['2016-02-23',15],['2015-12-08',30]], 
-                      columns = ['date','timedelta'])
+df = pd.DataFrame(
+    [["2016-01-10", 28], ["2016-05-11", 28], ["2016-02-23", 15], ["2015-12-08", 30]],
+    columns=["date", "days"],
+)
 
-df['date'] = pd.to_datetime(df['date'])
-df['timedelta'] = pd.to_timedelta(df['timedelta'], 'd')
+df["date"] = pd.to_datetime(df["date"])
+df["days"] = pd.to_timedelta(df["days"], "d")
 
 # %%
 df
 
 # %%
-# # goal is to extract the number of weeks based on the timedelta column, for example:
-# df['weeks'] = df['timedelta'] / np.timedelta64(1, 'W')
+# # solution:
+# df['weeks'] = df['days'] / np.timedelta64(1, 'W')
 
 # %%
 import ipywidgets as widgets
@@ -39,13 +45,13 @@ class TimedeltaExtractAttribute(ColumnTransformationPlugin):
         # based on https://docs.scipy.org/doc/numpy/reference/arrays.datetime.html#datetime-units
         self.attribute = SelectizeDropdown(
             options=[
-                ("year", "Y"),
-                ("month", "M"),
-                ("week", "W"),
-                ("day", "D"),
-                ("hour", "h"),
-                ("minute", "m"),
-                ("second", "s"),
+                ("years", "Y"),
+                ("months", "M"),
+                ("weeks", "W"),
+                ("days", "D"),
+                ("hours", "h"),
+                ("minutes", "m"),
+                ("seconds", "s"),
             ],
             value="D",
         )
@@ -66,8 +72,7 @@ class TimedeltaExtractAttribute(ColumnTransformationPlugin):
         )
 
     def get_code(self):
-        return f"""{DF_OLD}['{self.new_column_name.value}'] = {DF_OLD}['{self.column}'] / np.timedelta64(1, '{self.attribute.value}')"""
-
+        return f"{DF_OLD}['{self.new_column_name.value}'] = {DF_OLD}['{self.column}'] / np.timedelta64(1, '{self.attribute.value}')"
 
 
 # %% [markdown]
