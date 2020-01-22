@@ -1,34 +1,34 @@
 # %%
 import pandas as pd
 import bamboolib as bam
+
 bam.enable()
 
 # %%
-df_test = pd.DataFrame({'id': [1,2,3,4,5,6],
-              'ab': ['tet', 'tet', 'tet', 'erm' ,'erm' ,'erm'],
-              'ab_code': ['AB1', 'AB1', 'AB1', 'AB2', 'AB2', 'AB2', ]})
+df_test = pd.DataFrame(
+    {
+        "id": [1, 2, 3, 4, 5, 6],
+        "ab": ["tet", "tet", "tet", "erm", "erm", "erm"],
+        "ab_code": ["AB1", "AB1", "AB1", "AB2", "AB2", "AB2"],
+    }
+)
 df_test
 
 # %%
-df_test.groupby('ab').agg(lambda x: list(x))
+df_test.groupby("ab").agg(lambda x: list(x))
 
 
 # %%
 def custom(x):
-    #display(x)
-    #display(type(x))
+    # display(x)
+    # display(type(x))
     return list(x)
 
 
 # %%
 import ipywidgets as widgets
 
-from bamboolib.plugins import (
-    TransformationPlugin,
-    DF_OLD,
-    DF_NEW,
-    SelectizeWidget,
-)
+from bamboolib.plugins import TransformationPlugin, DF_OLD, DF_NEW, SelectizeWidget
 
 
 class GroupbyCustomFunction(TransformationPlugin):
@@ -60,7 +60,6 @@ class GroupbyCustomFunction(TransformationPlugin):
 
     def get_code(self):
         return f"{DF_NEW} = {DF_OLD}.groupby({self.groupby_columns.value}).agg({self.custom_function_text.value})"
-
 
 
 # %%
