@@ -1,6 +1,4 @@
 # %% [markdown]
-# import numpy as np
-# # ^^^ pyforest auto-imports - don't write above this line
 # # Extracting attributes from timedelta columns via a ColumnTransformationPlugin
 #
 # inspired by Sailu and the following stackoverflow question:
@@ -10,18 +8,19 @@
 
 # %%
 import pandas as pd
+import numpy as np
 import bamboolib as bam
 
-df = pd.DataFrame(
-    [["2016-01-10", 28], ["2016-05-11", 28], ["2016-02-23", 15], ["2015-12-08", 30]],
-    columns=["date", "days"],
-)
-
-df["date"] = pd.to_datetime(df["date"])
-df["days"] = pd.to_timedelta(df["days"], "d")
+# %%
+df = pd.DataFrame()
 
 # %%
-df
+df["date"] = ["2016-01-10", "2016-05-11", "2016-02-23", "2015-12-08"]
+df["date"] = pd.to_datetime(df["date"])
+
+# %%
+df["days"] = [28, 7, 15, 30]
+df["days"] = pd.to_timedelta(df["days"], "d")
 
 # %%
 # # solution:
@@ -76,7 +75,7 @@ class TimedeltaExtractAttribute(ColumnTransformationPlugin):
 
 
 # %% [markdown]
-# The plugin is shown in bamboolib when clicking on the column header of timedelta
+# __Hint:__ The plugin is shown in bamboolib when clicking on the column header of 'days'
 
 # %%
 df

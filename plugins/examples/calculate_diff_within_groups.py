@@ -41,9 +41,6 @@ df["revenue"] = [100, 200, 120, 220, 80, 75, 97, 123, 340, 98, 23, 124]
 # df['diff'] = df.groupby(['company'])['revenue'].transform(lambda series: series.diff())
 
 # %%
-df
-
-# %%
 import ipywidgets as widgets
 
 from bamboolib.plugins import (
@@ -87,7 +84,7 @@ class DiffWithinGroups(TransformationPlugin):
         )
 
     def get_code(self):
-        return f"{DF_OLD}['{self.new_column_name.value}'] = df.groupby({self.groupby_columns.value})['{self.value_column.value}'].transform(lambda series: series.diff())"
+        return f"{DF_OLD}['{self.new_column_name.value}'] = {DF_OLD}.groupby({self.groupby_columns.value})['{self.value_column.value}'].transform(lambda series: series.diff())"
 
 
 # %%

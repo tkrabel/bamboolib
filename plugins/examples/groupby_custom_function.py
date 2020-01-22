@@ -1,29 +1,39 @@
+# %% [markdown]
+# # Using custom groupby functions via a TransformationPlugin
+#
+# inspired by Harneet, Will and Zach
+#
+# __Goal:__ Groupby a column and execute either a lambda function or a custom function
+
 # %%
 import pandas as pd
 import bamboolib as bam
 
-bam.enable()
+# %%
+df = pd.DataFrame()
 
 # %%
-df_test = pd.DataFrame(
-    {
-        "id": [1, 2, 3, 4, 5, 6],
-        "ab": ["tet", "tet", "tet", "erm", "erm", "erm"],
-        "ab_code": ["AB1", "AB1", "AB1", "AB2", "AB2", "AB2"],
-    }
-)
-df_test
+df["group"] = ["A", "A", "A", "B", "B", "B"]
 
 # %%
-df_test.groupby("ab").agg(lambda x: list(x))
+df["item"] = ["x", "y", "z", "x", "y", "z"]
+
+# %%
+df["number"] = [1, 2, 3, 4, 5, 6]
 
 
 # %%
-def custom(x):
-    # display(x)
-    # display(type(x))
-    return list(x)
+def my_custom_function(series):
+    return min(series)
 
+
+# %%
+# # Solution 1:
+# df.groupby('group').agg(lambda x: min(x))
+
+# %%
+# # Solution 2:
+# df.groupby('group').agg(my_custom_function)
 
 # %%
 import ipywidgets as widgets
@@ -38,12 +48,14 @@ class GroupbyCustomFunction(TransformationPlugin):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
+        columns = list(self.get_df().columns)
+
         self.groupby_columns = SelectizeWidget(
-            options=list(self.get_df().columns), placeholder="Choose column(s)"
+            options=columns, placeholder="Choose column(s)"
         )
 
         self.custom_function_text = widgets.Text(
-            placeholder="lambda expression or function name", value="lambda x: min(x)"
+            value="lambda x: min(x)", placeholder="lambda expression or function name"
         )
 
     def render(self):
@@ -63,6 +75,6 @@ class GroupbyCustomFunction(TransformationPlugin):
 
 
 # %%
-df_test
+df
 
 # %%
