@@ -61,7 +61,7 @@ class DiffWithinGroups(TransformationPlugin):
         columns = list(self.get_df().columns)
 
         self.groupby_columns = SelectizeWidget(
-            options=columns, placeholder="Choose groupby column(s)"
+            options=columns, placeholder="Choose groupby column(s)", focus_after_init=True
         )
 
         self.value_column = SelectizeDropdown(
