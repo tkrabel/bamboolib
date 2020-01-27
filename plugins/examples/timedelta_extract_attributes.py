@@ -53,6 +53,7 @@ class TimedeltaExtractAttribute(ColumnTransformationPlugin):
                 ("seconds", "s"),
             ],
             value="D",
+            focus_after_init=True,
         )
         self.new_column_name = widgets.Text(value=self.column)
 
@@ -75,7 +76,7 @@ class TimedeltaExtractAttribute(ColumnTransformationPlugin):
 
 
 # %% [markdown]
-# __Hint:__ The plugin is shown in bamboolib when clicking on the column header of 'days'
+# __Hint:__ The plugin is shown in bamboolib when clicking on the column header of 'days' and searching for the transformation
 
 # %%
 df
