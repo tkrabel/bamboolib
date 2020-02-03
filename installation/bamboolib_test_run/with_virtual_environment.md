@@ -18,4 +18,4 @@ df = pd.read_csv(bam.titanic_csv)
 df
 ```
 
-You should see a GUI if everything worked fine. If you don't see anything, please read [here](https://github.com/tkrabel/bamboolib/blob/master/installation/troubleshooting/with_virtual_environment.md#troubleshooting-installation-errors).
+After clicking on the button displayed above the dataframe, you should see a GUI. If you don't see anything or get an error message, please read [here](https://docs.bamboolib.8080labs.com/troubleshooting#i-dont-see-the-user-interface-after-installing-bamboolib).
