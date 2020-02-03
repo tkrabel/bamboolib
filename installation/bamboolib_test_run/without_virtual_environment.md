@@ -15,7 +15,7 @@ Finally, run the following in a Jupyter Notebook / Lab code cell:
 import bamboolib as bam
 import pandas as pd
 df = pd.read_csv(bam.titanic_csv)
-bam.show(df)
+df
 ```
 
 You should see a GUI if everything worked fine. If you don't see anything, please read [here](https://github.com/tkrabel/bamboolib/blob/master/installation/troubleshooting/without_virtual_environment.md#troubleshooting-installation-errors).
