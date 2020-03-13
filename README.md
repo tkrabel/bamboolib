@@ -39,3 +39,4 @@ __[🔍Try bamboolib live on Binder](https://bamboolib.com/demo)__
 - [Documentation](https://docs.bamboolib.8080labs.com/)
 - [Get Started with bamboolib](https://bamboolib.8080labs.com/get-started)
 - [bamboolib tutorial on Medium](https://towardsdatascience.com/bamboolib-learn-and-use-pandas-without-coding-23a7d3a94e1b).
+- [Learn more about Docker support](./docker/README.md)
