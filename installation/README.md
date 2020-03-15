@@ -1,5 +1,7 @@
 # Installation of bamboolib
 
+[▶️ Watch the installation video](https://www.youtube.com/watch?v=AL4rUkHxzUY)
+
 In order to use bamboolib on private data, you need to buy a license. You can buy a license [here](https://bamboolib.com/pricing).
 
 ## Default: normal installation
