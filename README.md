@@ -52,7 +52,7 @@ For installations using virtual environments or JupyterLab, go [here](https://gi
 
 ## Documentation
 
-You find out how to get started along with tutorials and an API referenc on our [docs](https://docs.bamboolib.8080labs.com/).
+You find out how to get started along with tutorials and an API reference on our [docs](https://docs.bamboolib.8080labs.com/).
 
 ## Further links
 
