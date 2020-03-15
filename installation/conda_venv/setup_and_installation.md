@@ -31,6 +31,7 @@ The installations are different for Jupyter Notebook and Jupyter Lab.
 From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
 ```bash
+jupyter nbextension install --py qgrid --sys-prefix
 jupyter nbextension enable --py qgrid --sys-prefix
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 jupyter nbextension install --py bamboolib --sys-prefix
