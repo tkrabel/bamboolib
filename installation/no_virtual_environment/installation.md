@@ -28,7 +28,7 @@ jupyter nbextension install --py bamboolib --sys-prefix
 jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
-Afterwards, you can __[test bamboolib](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library)__
+Afterwards, you can __[test bamboolib](../bamboolib_test_run/without_virtual_environment.md#test-the-library)__
 
 
 #### 2.2. Jupyter Lab >=1.0
