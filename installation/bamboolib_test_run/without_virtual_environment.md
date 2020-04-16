@@ -22,4 +22,4 @@ After clicking on the button displayed above the dataframe, you should see a GUI
 
 ![](/assets/img/activation_screen.png)
 
- If you don't see anything or get an error message, please read [here](https://docs.bamboolib.8080labs.com/troubleshooting#i-dont-see-the-user-interface-after-installing-bamboolib).
+ If you don't see anything or get an error message, please read [here](https://docs.bamboolib.8080labs.com/etc/faq/i-dont-see-the-user-interface-after-installing-bamboolib).
