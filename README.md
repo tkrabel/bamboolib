@@ -48,7 +48,31 @@ jupyter nbextension install --py bamboolib --sys-prefix
 jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
-For installations using virtual environments or JupyterLab, go [here](https://github.com/tkrabel/bamboolib/tree/master/installation)
+Note that in order to avoid potential conflicts with other packages it is strongly recommended to use a virtual environment, e.g. [virtualenv](https://docs.python.org/3/tutorial/venv.html) or conda environments. Using an isolated environment makes it possible to install a specific version of bamboolib and its dependencies independently of any previously installed Python packages. If you are already using Anaconda, you can create an environment and install bamboolib with:
+
+```bash
+# Create conda environment
+conda create -n bamboolib_venv python=3.7 -y
+
+# Activate the environment
+conda activate bamboolib_venv
+
+# Add the IPython kernel to Jupyter
+conda install ipykernel -y
+python -m ipykernel install --user --name bamboolib_venv
+
+# Install bamboolib ...
+pip install bamboolib
+
+# ... and Jupyter Notebook extensions
+jupyter nbextension install --py qgrid --sys-prefix
+jupyter nbextension enable --py qgrid --sys-prefix
+jupyter nbextension enable --py widgetsnbextension --sys-prefix
+jupyter nbextension install --py bamboolib --sys-prefix
+jupyter nbextension enable --py bamboolib --sys-prefix
+```
+
+For installations using virtualenv or JupyterLab, go [here](https://github.com/tkrabel/bamboolib/tree/master/installation).
 
 ## Documentation
 
