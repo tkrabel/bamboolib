@@ -72,7 +72,7 @@ jupyter nbextension install --py bamboolib --sys-prefix
 jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
-For installations using virtualenv or JupyterLab, go [here](./installation).
+For installations using virtualenv or JupyterLab, go to our [installation instruction page](./installation).
 
 ## Documentation
 
