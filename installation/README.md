@@ -1,4 +1,6 @@
-# Installation of bamboolib
+# Installation of bamboolib (OUTDATED)
+
+__This installation page is OUTDATED and will be removed soon. For installation instructions, please visit our [documentation](https://docs.bamboolib.8080labs.com/). If you came here through an external link, please [let us know](mailto:info+repo_installation@8080labs.com) so that we can fix that for all the other people out there :)__
 
 [▶️ Watch the installation video](https://www.youtube.com/watch?v=AL4rUkHxzUY)
 
