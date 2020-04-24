@@ -43,6 +43,7 @@ pip install bamboolib
 # Jupyter Notebook extensions
 jupyter nbextension install --py qgrid --sys-prefix
 jupyter nbextension enable --py qgrid --sys-prefix
+jupyter nbextension install --py widgetsnbextension --sys-prefix
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 jupyter nbextension install --py bamboolib --sys-prefix
 jupyter nbextension enable --py bamboolib --sys-prefix
