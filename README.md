@@ -33,23 +33,21 @@ bamboolib is a python package for easy data exploration & transformation with pa
 
 __[🔍Try bamboolib live on Binder](https://bamboolib.com/demo)__
 
-## Quick installation for Jupyter Notebook
+## Installation
 
-Install bamboolib for Jupyter Notebook by running the code below in your terminal (or Anaconda Prompt for Windows)
+Install bamboolib for Jupyter Notebook or Jupyter Lab by running the code below in your terminal (or Anaconda Prompt for Windows):
 
 ```bash
 pip install bamboolib
 
 # Jupyter Notebook extensions
-jupyter nbextension install --py qgrid --sys-prefix
-jupyter nbextension enable --py qgrid --sys-prefix
-jupyter nbextension install --py widgetsnbextension --sys-prefix
-jupyter nbextension enable --py widgetsnbextension --sys-prefix
-jupyter nbextension install --py bamboolib --sys-prefix
-jupyter nbextension enable --py bamboolib --sys-prefix
+python -m bamboolib install_nbextensions
+
+# JupyterLab extensions
+python -m bamboolib install_labextensions
 ```
 
-For installations using virtual envirnonments or JupyterLab, check our [installation instruction page](https://docs.bamboolib.8080labs.com/documentation/how-tos/installation-and-setup/install-bamboolib).
+After you have installed bamboolib, you can [go here to test bamboolib](https://docs.bamboolib.8080labs.com/documentation/how-tos/installation-and-setup/install-bamboolib/test-bamboolib).
 
 ## Documentation
 
