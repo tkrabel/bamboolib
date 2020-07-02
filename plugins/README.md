@@ -76,14 +76,14 @@ __Attributes:__
 - new_df_name_input
 
 
-### bamboolib.plugins.SelectizeWidget
+### bamboolib.plugins.Multiselect
 
 - Custom widget that allows the user to select 1 or multiple values.
 
 
 - `value` attribute contains a list of the selected values.
 
-### bamboolib.plugins.SelectizeDropdown
+### bamboolib.plugins.Dropdown
 
 - Custom widget that allows the user to select 1 specific value.
 

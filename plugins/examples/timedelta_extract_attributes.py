@@ -29,7 +29,7 @@ df["days"] = pd.to_timedelta(df["days"], "d")
 # %%
 import ipywidgets as widgets
 
-from bamboolib.plugins import ColumnTransformationPlugin, DF_OLD, SelectizeDropdown
+from bamboolib.plugins import ColumnTransformationPlugin, DF_OLD, Dropdown
 
 
 class TimedeltaExtractAttribute(ColumnTransformationPlugin):
@@ -41,8 +41,7 @@ class TimedeltaExtractAttribute(ColumnTransformationPlugin):
 
         self.column = column
 
-        # based on https://docs.scipy.org/doc/numpy/reference/arrays.datetime.html#datetime-units
-        self.attribute = SelectizeDropdown(
+        self.column = Dropdown(
             options=[
                 ("years", "Y"),
                 ("months", "M"),
@@ -55,7 +54,22 @@ class TimedeltaExtractAttribute(ColumnTransformationPlugin):
             value="D",
             focus_after_init=True,
         )
-        self.new_column_name = widgets.Text(value=self.column)
+
+        # based on https://docs.scipy.org/doc/numpy/reference/arrays.datetime.html#datetime-units
+        self.attribute = Dropdown(
+            options=[
+                ("years", "Y"),
+                ("months", "M"),
+                ("weeks", "W"),
+                ("days", "D"),
+                ("hours", "h"),
+                ("minutes", "m"),
+                ("seconds", "s"),
+            ],
+            value="D",
+            focus_after_init=True,
+        )
+        self.new_column_name = widgets.Text()
 
     def render(self):
         self.set_title("Extract attribute")

@@ -46,8 +46,8 @@ import ipywidgets as widgets
 from bamboolib.plugins import (
     TransformationPlugin,
     DF_OLD,
-    SelectizeWidget,
-    SelectizeDropdown,
+    Multiselect,
+    Dropdown,
 )
 
 
@@ -60,11 +60,11 @@ class DiffWithinGroups(TransformationPlugin):
 
         columns = list(self.get_df().columns)
 
-        self.groupby_columns = SelectizeWidget(
+        self.groupby_columns = Multiselect(
             options=columns, placeholder="Choose groupby column(s)", focus_after_init=True
         )
 
-        self.value_column = SelectizeDropdown(
+        self.value_column = Dropdown(
             options=columns, placeholder="Choose value column"
         )
 

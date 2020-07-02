@@ -38,7 +38,7 @@ def my_custom_function(series):
 # %%
 import ipywidgets as widgets
 
-from bamboolib.plugins import TransformationPlugin, DF_OLD, DF_NEW, SelectizeWidget
+from bamboolib.plugins import TransformationPlugin, DF_OLD, DF_NEW, Multiselect
 
 
 class GroupbyCustomFunction(TransformationPlugin):
@@ -50,7 +50,7 @@ class GroupbyCustomFunction(TransformationPlugin):
 
         columns = list(self.get_df().columns)
 
-        self.groupby_columns = SelectizeWidget(
+        self.groupby_columns = Multiselect(
             options=columns, placeholder="Choose column(s)"
         )
 
