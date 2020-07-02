@@ -75,11 +75,6 @@ __Attributes:__
 - spacer
 - new_df_name_input
 
-### bamboolib.plugins.ColumnTransformationPlugin
-
-The same as `bamboolib.plugins.TransformationPlugin` except for 2 differences:
-1. it is only shown in the column menu (when clicking on a column)
-2. it receives a `column` keyword argument in the constructor
 
 ### bamboolib.plugins.SelectizeWidget
 
