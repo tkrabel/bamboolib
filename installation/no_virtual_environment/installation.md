@@ -21,13 +21,14 @@ The installations are different for Jupyter Notebook and Jupyter Lab.
 From the terminal, you need to setup the Jupyter Notebook extensions via the following command:
 
 ```bash
+jupyter nbextension install --py qgrid --sys-prefix
 jupyter nbextension enable --py qgrid --sys-prefix
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
 jupyter nbextension install --py bamboolib --sys-prefix
 jupyter nbextension enable --py bamboolib --sys-prefix
 ```
 
-Afterwards, you can __[test bamboolib](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library)__
+Afterwards, you can __[test bamboolib](../bamboolib_test_run/without_virtual_environment.md#test-the-library)__
 
 
 #### 2.2. Jupyter Lab >=1.0
@@ -63,7 +64,7 @@ jupyter labextension install bamboolib --no-build
 jupyter lab build --minimize=False
 ```
 
-Afterwards, you can __[test bamboolib](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library)__
+Afterwards, you can __[test bamboolib](../bamboolib_test_run/without_virtual_environment.md#test-the-library)__
 
 
 ### 3. Test bamboolib
@@ -71,4 +72,4 @@ Afterwards, you can __[test bamboolib](https://github.com/tkrabel/bamboolib/blob
 After the 2 installation steps, you can:
 
 
-__[Continue to test bamboolib](https://github.com/tkrabel/bamboolib/blob/master/installation/bamboolib_test_run/without_virtual_environment.md#test-the-library)__
+__[Continue to test bamboolib](../bamboolib_test_run/without_virtual_environment.md#test-the-library)__
