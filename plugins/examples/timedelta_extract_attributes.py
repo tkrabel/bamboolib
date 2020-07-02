@@ -1,5 +1,5 @@
 # %% [markdown]
-# # Extracting attributes from timedelta columns via a ColumnTransformationPlugin
+# # Extracting attributes from timedelta columns via a TransformationPlugin
 #
 # inspired by Sailu and the following stackoverflow question:
 # - https://stackoverflow.com/questions/38355816/pandas-add-timedelta-column-to-datetime-column-vectorized
@@ -29,30 +29,18 @@ df["days"] = pd.to_timedelta(df["days"], "d")
 # %%
 import ipywidgets as widgets
 
-from bamboolib.plugins import ColumnTransformationPlugin, DF_OLD, Dropdown
+from bamboolib.plugins import TransformationPlugin, DF_OLD, Dropdown, Text
 
 
-class TimedeltaExtractAttribute(ColumnTransformationPlugin):
+class TimedeltaExtractAttribute(TransformationPlugin):
 
     name = "Timedelta: extract attribute"
 
-    def __init__(self, *args, column=None, **kwargs):
+    def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.column = column
-
         self.column = Dropdown(
-            options=[
-                ("years", "Y"),
-                ("months", "M"),
-                ("weeks", "W"),
-                ("days", "D"),
-                ("hours", "h"),
-                ("minutes", "m"),
-                ("seconds", "s"),
-            ],
-            value="D",
-            focus_after_init=True,
+            options=list(self.get_df().columns), focus_after_init=True
         )
 
         # based on https://docs.scipy.org/doc/numpy/reference/arrays.datetime.html#datetime-units
@@ -67,30 +55,30 @@ class TimedeltaExtractAttribute(ColumnTransformationPlugin):
                 ("seconds", "s"),
             ],
             value="D",
-            focus_after_init=True,
         )
-        self.new_column_name = widgets.Text()
+        self.new_column_name = Text(
+            description="New column name", width="lg", execute=self
+        )
 
     def render(self):
         self.set_title("Extract attribute")
         self.set_content(
-            widgets.HTML(f"Convert <b>{self.column}</b> to"),
+            widgets.HTML("Convert"),
+            self.column,
+            widgets.HTML("to"),
             self.attribute,
-            widgets.HTML("New column name:"),
             self.new_column_name,
         )
 
     def get_description(self):
-        return (
-            f"Extract timedelta attribute {self.attribute.label} from '{self.column}'"
-        )
+        return f"Extract timedelta attribute {self.attribute.label} from '{self.column.value}'"
 
     def get_code(self):
-        return f"{DF_OLD}['{self.new_column_name.value}'] = {DF_OLD}['{self.column}'] / np.timedelta64(1, '{self.attribute.value}')"
+        return f"{DF_OLD}['{self.new_column_name.value}'] = {DF_OLD}['{self.column.value}'] / np.timedelta64(1, '{self.attribute.value}')"
 
 
 # %% [markdown]
-# __Hint:__ The plugin is shown in bamboolib when clicking on the column header of 'days' and searching for the transformation
+# __Hint:__ The plugin is shown in bamboolib when searching for "Timedelta: extract attribute"
 
 # %%
 df

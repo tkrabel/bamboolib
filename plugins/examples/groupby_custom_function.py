@@ -61,10 +61,9 @@ class GroupbyCustomFunction(TransformationPlugin):
     def render(self):
         self.set_title("Groupy with custom function")
         self.set_content(
-            widgets.HTML("Groupby:"),
+            widgets.HTML("Groupby"),
             self.groupby_columns,
-            self.spacer,
-            widgets.HTML("Aggregation:"),
+            widgets.HTML("and apply aggregation"),
             self.custom_function_text,
             self.rename_df_group,
             self.code_preview_group,

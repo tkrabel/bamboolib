@@ -43,12 +43,7 @@ df["revenue"] = [100, 200, 120, 220, 80, 75, 97, 123, 340, 98, 23, 124]
 # %%
 import ipywidgets as widgets
 
-from bamboolib.plugins import (
-    TransformationPlugin,
-    DF_OLD,
-    Multiselect,
-    Dropdown,
-)
+from bamboolib.plugins import TransformationPlugin, DF_OLD, Multiselect, Dropdown
 
 
 class DiffWithinGroups(TransformationPlugin):
@@ -61,12 +56,12 @@ class DiffWithinGroups(TransformationPlugin):
         columns = list(self.get_df().columns)
 
         self.groupby_columns = Multiselect(
-            options=columns, placeholder="Choose groupby column(s)", focus_after_init=True
+            options=columns,
+            placeholder="Choose groupby column(s)",
+            focus_after_init=True,
         )
 
-        self.value_column = Dropdown(
-            options=columns, placeholder="Choose value column"
-        )
+        self.value_column = Dropdown(options=columns, placeholder="Choose value column")
 
         self.new_column_name = widgets.Text(
             value="diff", placeholder="Name of diff column"
@@ -75,11 +70,11 @@ class DiffWithinGroups(TransformationPlugin):
     def render(self):
         self.set_title("Diff within groups")
         self.set_content(
-            widgets.HTML("Groupby:"),
+            widgets.HTML("Groupby"),
             self.groupby_columns,
-            widgets.HTML("Calculate diff of:"),
+            widgets.HTML("and calculate diff of"),
             self.value_column,
-            widgets.HTML("Call result column:"),
+            widgets.HTML("Name of new column"),
             self.new_column_name,
         )
 
