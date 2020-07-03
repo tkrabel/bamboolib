@@ -83,7 +83,7 @@ __Attributes:__
 
 - `value` attribute contains a list of the selected values.
 
-### bamboolib.plugins.Dropdown
+### bamboolib.plugins.Singleselect
 
 - Custom widget that allows the user to select 1 specific value.
 
