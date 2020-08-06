@@ -1,4 +1,4 @@
-# Community repository of bamboolib - the Fastest and Easiest Way to Work with pandas DataFrames 🐼🐍
+# Community repository of bamboolib - a GUI for pandas DataFrames 🐼🐍
 [![](https://img.shields.io/badge/python->=3.6-blue.svg)](https://bamboolib.com)
 
 This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). There are no source files because bamboolib is closed source. However, you can [use bamboolib for free on Open Data](https://bamboolib.8080labs.com/get-started). If you have any issues or feature requests, please open an issue.
