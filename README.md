@@ -1,7 +1,7 @@
 # Community repository of bamboolib - a GUI for pandas DataFrames 🐼🐍
 [![](https://img.shields.io/badge/python->=3.6-blue.svg)](https://bamboolib.com)
 
-This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). There are no source files because bamboolib is closed source. However, you can [use bamboolib for free on Open Data](https://bamboolib.8080labs.com/get-started). If you have any issues or feature requests, please open an issue.
+This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). There are no source files because bamboolib is closed source. However, you can use bamboolib for free on Open Data via [Binder](https://github.com/8080labs/bamboolib_binder_template) and Kaggle. If you have any issues or feature requests, please open an issue.
 
 bamboolib is a GUI for pandas DataFrames that enables anyone to work with Python in Jupyter Notebook or JupyterLab.
 
