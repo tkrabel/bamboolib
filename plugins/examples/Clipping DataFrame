@@ -1,0 +1,101 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # Extreme value capping of column values 
+
+# #### Clipping may be useful in cases where sensors record values that is beyond which the sensor is designed to detect and operate in
+# #### Objective: To replace the values that lie outside the specified lower and upper thresholds with same as required.
+
+# In[1]:
+
+
+#import the libraries required
+import numpy as np
+import pandas as pd
+import bamboolib as bam
+import preprocess
+
+
+# In[2]:
+
+
+import ipywidgets as widgets
+from ipywidgets import Layout,HBox, Label
+from bamboolib.plugins import (
+    TransformationPlugin,
+    DF_OLD,
+    Singleselect,
+)
+
+
+class clipColumn(TransformationPlugin):
+
+    
+    name = "Clipping specific columns"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        columns = list(self.get_df().columns)
+        #Select the column to clip
+        self.col = Singleselect(
+            options=columns,label='Choose the column to clip',value=columns[0]
+        )        
+
+        #Set the lower threshold
+        self.lower = widgets.FloatText(
+        value=0,
+        description='Lower:',
+        disabled=False,
+        layout=Layout(width='80%', height='80px')    
+        )
+        
+        #Set the upper threshold
+        self.upper = widgets.FloatText(
+        value=0,
+        description='Upper:',
+        disabled=False, 
+        layout=Layout(width='80%', height='80px')
+        )        
+
+    def render(self):
+        self.set_title("Clipping Columns")
+        self.set_content(
+            self.col,
+            self.lower,
+            self.upper
+        )
+
+    def get_code(self):
+        return f"{DF_OLD}['{self.col.value}'] = {DF_OLD}['{self.col.value}'].clip(lower={self.lower.value},upper={self.upper.value})"
+    
+
+
+# # Testing the functions
+
+# In[3]:
+
+
+index = pd.date_range('1/1/2000', periods=9, freq='T')
+series = pd.Series(range(9), index=index,name='A')
+testdf=pd.DataFrame(series)
+testdf['B']=np.random.randn(9)
+
+
+# In[4]:
+
+
+preprocess.capExtremeValues(testdf,'A',1)
+
+
+# In[5]:
+
+
+testdf
+
+
+# In[ ]:
+
+
+
+
