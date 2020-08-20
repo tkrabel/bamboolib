@@ -43,12 +43,13 @@ df["revenue"] = [100, 200, 120, 220, 80, 75, 97, 123, 340, 98, 23, 124]
 # %%
 import ipywidgets as widgets
 
-from bamboolib.plugins import TransformationPlugin, DF_OLD, Multiselect, Singleselect
+from bamboolib.plugins import TransformationPlugin, DF_OLD, Multiselect, Singleselect, Text
 
 
 class DiffWithinGroups(TransformationPlugin):
 
     name = "Diff within groups"
+    description = "E.g. for each company, calculate the revenue diff to the previous month/row"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -63,7 +64,7 @@ class DiffWithinGroups(TransformationPlugin):
 
         self.value_column = Singleselect(options=columns, placeholder="Choose value column")
 
-        self.new_column_name = widgets.Text(
+        self.new_column_name = Text(
             value="diff", placeholder="Name of diff column"
         )
 
