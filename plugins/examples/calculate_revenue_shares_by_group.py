@@ -38,8 +38,8 @@ class TotalRevenueShare(TransformationPlugin):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.groupby_columns = Singleselect(
-            options=list(self.get_df().columns), 
+        self.groupby_column = Singleselect(
+            options=list(self.get_df().columns),
             placeholder="Choose column",
             focus_after_init=True
         )
@@ -48,12 +48,12 @@ class TotalRevenueShare(TransformationPlugin):
         self.set_title("Total revenue share")
         self.set_content(
             widgets.HTML("Compute the <b>total revenue share</b> for each value in"),
-            self.groupby_columns,
+            self.groupby_column,
             self.rename_df_group,
         )
 
     def get_code(self):
-        return f"{DF_NEW} = compute_share({DF_OLD}, '{self.groupby_columns.value}', 'total_revenue')"
+        return f"{DF_NEW} = compute_share({DF_OLD}, '{self.groupby_column.value}', 'total_revenue')"
 
 
 # %% [markdown]
