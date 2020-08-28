@@ -38,12 +38,13 @@ def my_custom_function(series):
 # %%
 import ipywidgets as widgets
 
-from bamboolib.plugins import TransformationPlugin, DF_OLD, DF_NEW, Multiselect
+from bamboolib.plugins import TransformationPlugin, DF_OLD, DF_NEW, Multiselect, Text
 
 
 class GroupbyCustomFunction(TransformationPlugin):
 
     name = "Groupby with custom function"
+    description = "Apply a custom function to each group in one or multiple columns"
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -54,7 +55,7 @@ class GroupbyCustomFunction(TransformationPlugin):
             options=columns, placeholder="Choose column(s)"
         )
 
-        self.custom_function_text = widgets.Text(
+        self.custom_function_text = Text(
             value="lambda x: min(x)", placeholder="lambda expression or function name"
         )
 

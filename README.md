@@ -1,35 +1,27 @@
-# Community repository of bamboolib - the Fastest and Easiest Way to Work with pandas DataFrames 🐼🐍
+# Community repository of bamboolib - a GUI for pandas DataFrames 🐼🐍
 [![](https://img.shields.io/badge/python->=3.6-blue.svg)](https://bamboolib.com)
 
-This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). There are no source files because bamboolib is closed source. However, you can [use bamboolib for free on Open Data](https://bamboolib.8080labs.com/get-started). If you have any issues or feature requests, please open an issue.
+This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). There are no source files because bamboolib is closed source. However, you can use bamboolib for free on Open Data via [Binder](https://github.com/8080labs/bamboolib_binder_template) and Kaggle. If you have any issues or feature requests, please open an issue.
 
-bamboolib is a python package for easy data exploration & transformation with pandas. You can use it with Jupyter Notebook or JupyterLab. bamboolib adds an interactive UI to your pandas output, which allows you to quickly prepare and visualize your data. All transformations come with **full keyboard control**, making bamboolib loved both by pandas-savvy users as well as Python novices.
+bamboolib is a GUI for pandas DataFrames that enables anyone to work with Python in Jupyter Notebook or JupyterLab.
 
-## Main features and benefits of bamboolib
+## Features
 
-### 90% less working time
+- Intuitive GUI that exports Python code
+- Supports all common transformations and visualizations
+- Provides best-practice analyses for data exploration
+- Can be arbitrarily customized via simple Python plugins
+- Integrate any internal or external Python library
 
-- Focus on what you want to do instead of how
-- No more digging through StackOverflow
-- Use your keyboard or mouse – whatever is fastest
+## Main benefits of bamboolib
 
-### Easy to use
-
-- Quick onboarding with minimal learning curve
-- Find all features via an intuitive search bar
-- Created by professional Data Scientists
-
-### 100% compatible and flexible
-
-- Seamless integration into your existing working environment
-- Work from within Jupyter Notebook or JupyterLab
-- Live code export for reproducibility and full customization
-
-### Private, secure, local
-
-- All your data remains private and secure
-- Use it on your local machine without the need for cloud access
-- Satisfies the requirements of your IT department
+- Enables data analysts to work with Python without having to write code
+- Reduces the on-boarding time and training costs for data analysts
+- Removes the organizational divide between GUI and coding tools and creates a single platform & point of truth
+- Enables data analysts to collaborate with data scientists within Jupyter and to share the working results as reproducible code
+- Compared to other enterprise AI platforms, bamboolib creates no technical lock-in and provides the greatest flexibility via leveraging Python
+- Even people who can code use bamboolib because it is faster and easier than writing the code themselves
+- Reduces cognitive load: Focus on what's important instead of spending your time on StackOverflow.
 
 __[🔍Try bamboolib live on Binder](https://bamboolib.com/demo)__
 
