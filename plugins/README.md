@@ -27,14 +27,12 @@ bamboolib enables you to quickly add plugins or even write your own plugins base
 - If you add a plugin, it will be available as long as the Python kernel is running.
 - If you restart your Python kernel, the plugin will no longer be available.
 
-Therefore, there are __multiple alternatives__ how to permanently add your plugin:
-1. Put the plugin code into a Python file in the IPython auto startup folder which is located in your home directory at `~/.ipython/profile_default/startup` This code is run by IPython every time you start a new Jupyter Python kernel.
-2. Put the plugin code into a Python package and import the package at the top of your Jupyter Notebook. For example, you can quickly create a new Python package with [pyscaffold](https://github.com/pyscaffold/pyscaffold). You might also want to upload your own plugin package to a private or public GitHub repository and collaborate with others to make sure that you will always have the best plugins available for your use case.
-3. Combine the alternatives 1. and 2. via adding the import to your package to the IPython auto-import.
-4. Just add the plugin code at the top of your Jupyter Notebook. This is a little bit clunky to do it for every new notebook but it would work.
+Given those constraints there are __multiple alternatives__. Our __preferred option is number 2__:
+1. Put the plugin code into an internal Python package and import the package at the top of your Jupyter Notebook. For example, you can quickly create a new Python package with [pyscaffold](https://github.com/pyscaffold/pyscaffold). You might also want to upload your own plugin package to a private or public GitHub repository and collaborate with others to make sure that you will always have all the best plugins available for your use case.
+2. __[Preferred]__ Create an internal library like described in step 1. Then, use [Jupyter templates](https://towardsdatascience.com/stop-copy-pasting-notebooks-embrace-jupyter-templates-6bd7b6c00b94) in order to always automatically import bamboolib and your internal library at the top of the notebook when creating a new notebook file.
+3. [Discouraged] Put the raw plugin code or the import of your internal library into a Python file in the IPython auto startup folder which is located in your home directory at `~/.ipython/profile_default/startup` This code is run by IPython every time you start a new Jupyter Python kernel. The only reason why we list this approach is because we want to let you know why we kindly discourage it. This approach hides the state and dependencies of your notebook. Thus, your notebook might not work out of the box when run on the computer of a colleague who might not have the same startup script like you do.
 
-
-Do you have __another idea__ on how to always execute your plugins? Let us know via the issues. Your approach might be helpful to others as well :)
+Do you __prefer another way?__ If so, please let us know via the issues. Your approach might be helpful to others as well :)
 
 
 ## Plugin architecture
@@ -46,7 +44,19 @@ If you want to build the plugins of your dreams, you basically need 2 ingredient
 
 ## Reference
 
-For more infos on how to use the internals, please check the examples.
+Below, you find the description of some of the core plugin components like `TransformationPlugin`, `DF_OLD`, and `DF_NEW`.
+
+In addition, the following components can be imported from `bamboolib.plugins`:
+- `BamboolibError` - helpful for raising beautiful errors
+- `Singleselect`
+- `Multiselect`
+- `Button`
+- `Text`
+
+If you want more information about their usage, please check the Docstring e.g. using `Text?` or `help(Text)`
+
+For more infos about their usage in the real life, please check the examples.
+
 
 ### bamboolib.plugins.TransformationPlugin
 
@@ -74,21 +84,6 @@ __Attributes:__
 - code_preview_group
 - spacer
 - new_df_name_input
-
-
-### bamboolib.plugins.Multiselect
-
-- Custom widget that allows the user to select 1 or multiple values.
-
-
-- `value` attribute contains a list of the selected values.
-
-### bamboolib.plugins.Dropdown
-
-- Custom widget that allows the user to select 1 specific value.
-
-- `value` attribute contains the selected value.
-
 
 ### bamboolib.plugins.DF_OLD
 
