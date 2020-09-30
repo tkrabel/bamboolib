@@ -57,6 +57,23 @@ If you want more information about their usage, please check the Docstring e.g. 
 
 For more infos about their usage in the real life, please check the examples.
 
+### bamboolib.plugins.LoaderPlugin
+
+__Methods that you can OVERRIDE:__
+- __get_code()__: this is the __bare minimum__ that is required. You need to return a string that contains Python code.
+- __render()__: for adding custom user interface elements
+
+__Helpers that you might want to USE:__
+
+__Methods:__
+- set_title()
+- set_content()
+- execute(): starts the code execution
+
+__Attributes:__
+- new_df_name_group: input for giving the new dataframe a name that is referenced as DF_NEW in the code
+- execute_button: button that calls execute() when called
+
 
 ### bamboolib.plugins.TransformationPlugin
 
