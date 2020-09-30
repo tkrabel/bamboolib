@@ -14,7 +14,7 @@ sales_df = bam.get_sales_df()
 # %%
 # Custom function used in Plugin
 def compute_share(df, groupby_column, value_column):
-    shares = sales.groupby(groupby_column).agg({value_column: "sum"}).reset_index()
+    shares = df.groupby(groupby_column).agg({value_column: "sum"}).reset_index()
     shares[value_column + "_share"] = shares[value_column] / shares[value_column].sum() * 100
     shares = shares.drop(columns=[value_column])
     return shares
