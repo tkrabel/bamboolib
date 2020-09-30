@@ -54,4 +54,11 @@ class DummyData(LoaderPlugin):
                     {DF_NEW} = {self.dataset.value}
                 """
 
+
+# %% [markdown]
+# When you adjusted the class, you can also debug and view the plugin UI via executing `DummyData()`. This saves you the time of navigating to the plugin in the UI in order to view your changes.
+
+# %%
+DummyData()
+
 # %%
