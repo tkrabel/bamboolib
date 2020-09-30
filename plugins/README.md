@@ -1,17 +1,19 @@
-# Plugins - add your own transformations
+# Plugins - add your own transformations, loaders or views
 
 > __Beta:__ Plugins are currently in Beta and the API is not stable yet. Please expect that the API might change to some extent. However, we will try to minimize any changes and provide backwards compatibility.
 
 ## Scenario:
 - Are you __missing a special transformation__ in bamboolib?
 - Do you want to provide __custom transformations for your team__?
+- Do you want to __load data from a custom source__?
+- Do you want to add __custom visualizations or data explorations__?
 
 bamboolib enables you to quickly add plugins or even write your own plugins based on your specific needs.
 
 
 ## Get started
 
-1) make sure that you are running bamboolib 1.3.0 or higher. You can check this via running: `bam.__version__` If you need to upgrade, please [follow this guide](https://docs.bamboolib.8080labs.com/how-tos/update-to-a-new-version-of-bamboolib)
+1) make sure that you are running bamboolib 1.18.0 or higher. You can check this via running: `bam.__version__` If you need to upgrade, please [follow this guide](https://docs.bamboolib.8080labs.com/how-tos/update-to-a-new-version-of-bamboolib)
 
 2) write your own plugin or [copy an example](https://github.com/tkrabel/bamboolib/tree/master/plugins/examples)
 
@@ -44,7 +46,7 @@ If you want to build the plugins of your dreams, you basically need 2 ingredient
 
 ## Reference
 
-Below, you find the description of some of the core plugin components like `TransformationPlugin`, `DF_OLD`, and `DF_NEW`.
+Below, you find the description of some of the core plugin components like `LoaderPlugin`, `TransformationPlugin`, `DF_OLD`, and `DF_NEW`.
 
 In addition, the following components can be imported from `bamboolib.plugins`:
 - `BamboolibError` - helpful for raising beautiful errors
@@ -115,4 +117,6 @@ __Attributes:__
 - At runtime, bamboolib will replace the placeholder with the new name of the current dataframe.
 The new name can be specified by the user inside the `rename_df_group` input element.
 
-> Attention: the renaming will only work if you add `self.rename_df_group` to `self.set_content()`
+> Attention: for TransformationPlugin the renaming will only work if you add `self.rename_df_group` to `self.set_content()`
+
+> Attention: for LoaderPlugin the renaming will only work if you add `self.new_df_name_group` to `self.set_content()`
