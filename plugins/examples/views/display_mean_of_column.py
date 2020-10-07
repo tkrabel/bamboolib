@@ -6,7 +6,7 @@
 # For a user specified column, display it's mean. It the mean cannot be computed (e.g. because it's a string column), show the user a message.
 #
 # **Need help?**  
-# If you have any questions or need help, please <a href="mailto:support+viewplugin_demo_compute_mean@8080labs.com">reach out</a>.
+# If you have any questions or need help, please <a href="mailto:support+viewplugin_demo_mean_of_column@8080labs.com">reach out</a>.
 
 # %% [markdown]
 # Run the code below. After that, you can call the plugin in two ways:
@@ -45,7 +45,9 @@ class ComputeMeanOfColumn(ViewPlugin):
         self.execute_button = Button(
             description="Compute mean", 
             style="primary",  # Make the button green.
-            on_click=self.update_output  # Whenever user clicks on self.execute_button, we call update_output.
+            # Whenever user clicks on self.execute_button, we call update_output.
+            # For more info, type `help(Button)`
+            on_click=self.update_output  
         )
         
         self.output = widgets.VBox([])
@@ -85,3 +87,7 @@ ComputeMeanOfColumn(df=df)
 # %%
 # Run cell and search for "mean" in the bamboolib search bar.
 df
+
+# %% [markdown]
+# **Do you have any questions or feedback?**  
+# We're happy to hear it! Please <a href="mailto:bamboolib+viewplugin_demo_mean_of_column@8080labs.com">shoot us a message</a>.
