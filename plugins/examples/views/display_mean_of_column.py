@@ -3,7 +3,7 @@
 # This little demo shows the basics of how to write a Viewplugin.  
 #
 # **Goal of the plugin**   
-# For a user specified column, display its mean. It the mean cannot be computed (e.g. because it's a string column), show the user a message.
+# For a user specified column, display its mean. If the mean cannot be computed (e.g. because it's a string column), show the user a message.
 #
 # **Need help?**  
 # If you have any questions or need help, please <a href="mailto:support+viewplugin_demo_mean_of_column@8080labs.com">reach out</a>.
