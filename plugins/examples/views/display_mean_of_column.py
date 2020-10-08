@@ -10,15 +10,15 @@
 
 # %% [markdown]
 # Run the code below. After that, you can call the plugin in two ways:
-# 1. **For the end user:** open bamboolib by calling `df` and search for the plugin by its name (or description)
-# 2. **During development:** call the plugin directly with `ComputeMeanOfColumn(df=df)`
+# 1. **For the end user:** open bamboolib by calling `df_titanic` and search for the plugin by its name (or description)
+# 2. **During development:** call the plugin directly with `ComputeMeanOfColumn(df=df_titanic)`
 
 # %%
 import bamboolib as bam
 import pandas as pd
 
 # For this demo, we work with the titanic data set that comes pre-installed with bamboolib
-df = pd.read_csv(bam.titanic_csv)
+df_titanic = pd.read_csv(bam.titanic_csv)
 
 import ipywidgets as widgets  # We use that to display e.g. HTML
 
@@ -63,9 +63,10 @@ class ComputeMeanOfColumn(ViewPlugin):
     
     def update_output(self, button):  # button is a required argument (convention by ipywidgets).
         selected_column_name = self.column_input.value
+        selected_series = self.get_df()[selected_column_name]
         
         try:
-            result = df[selected_column_name].mean()
+            result = selected_series.mean()
             message = f"Mean of <b>{selected_column_name}</b>: {result:.2f}"
         except:
             # Fails e.g. if column is not numeric.
@@ -76,17 +77,17 @@ class ComputeMeanOfColumn(ViewPlugin):
 
 
 # %% [markdown]
-# When you adjusted the class, you can also debug and view the plugin UI via executing `ComputeMeanOfColumn(df=df)`. This saves you the time of navigating to the plugin in the UI in order to view your changes.
+# When you adjusted the class, you can also debug and view the plugin UI via executing `ComputeMeanOfColumn(df=df_titanic)`. This saves you the time of navigating to the plugin in the UI in order to view your changes.
 
 # %%
-ComputeMeanOfColumn(df=df)
+ComputeMeanOfColumn(df=df_titanic)
 
 # %% [markdown]
 # Your users can find the plugin by searching for it's name (or description) inside of bamboolib.
 
 # %%
 # Run cell and search for "mean" in the bamboolib search bar.
-df
+df_titanic
 
 # %% [markdown]
 # **Do you have any questions or feedback?**  
