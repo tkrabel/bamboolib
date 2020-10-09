@@ -9,6 +9,7 @@
 # If you have any questions or need help, please <a href="mailto:support+viewplugin_demo_mean_of_column@8080labs.com">reach out</a>.
 
 # %% [markdown]
+# **Your turn**   
 # Run the code below. After that, you can call the plugin in two ways:
 # 1. **For the end user:** open bamboolib by calling `df_titanic` and search for the plugin by its name (or description)
 # 2. **During development:** call the plugin directly with `ComputeMeanOfColumn(df=df_titanic)`
@@ -31,9 +32,7 @@ class ComputeMeanOfColumn(ViewPlugin):
     name = "Compute mean of a column"
     description = "Compute the mean of a selected column"
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-
+    def render(self):
         column_names = list(self.get_df().columns)
 
         self.column_input = Singleselect(
@@ -51,8 +50,7 @@ class ComputeMeanOfColumn(ViewPlugin):
         )
         
         self.output = widgets.VBox([])
-
-    def render(self):
+        
         self.set_title("Compute mean of column")
         self.set_content(
             widgets.HTML("Column"),
