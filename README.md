@@ -1,7 +1,7 @@
 # Community repository of bamboolib
 # Data Analysis in Python 🐍 - without becoming a programmer or googling syntax
 
-[![](https://img.shields.io/badge/python->=3.6-blue.svg)](https://bamboolib.com)[![](https://img.shields.io/badge/python-<=3.8-orange.svg)](https://bamboolib.com)
+[![](https://img.shields.io/badge/python-3.6-blue.svg)](https://bamboolib.com)[![](https://img.shields.io/badge/python-3.7-green.svg)](https://bamboolib.com)[![](https://img.shields.io/badge/python-3.8-orange.svg)](https://bamboolib.com)
 
 This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). You can use bamboolib for free if you use bamboolib on your local computer or on Open Data via [Binder](https://github.com/8080labs/bamboolib_binder_template). 
 
