@@ -1,7 +1,13 @@
-# Community repository of bamboolib - a GUI for pandas DataFrames 🐼🐍
+# Community repository of bamboolib
+# Data Analysis in Python 🐍 - without becoming a programmer or googling syntax
+
 [![](https://img.shields.io/badge/python->=3.6-blue.svg)](https://bamboolib.com)
 
-This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). There are no source files because bamboolib is closed source. However, you can use bamboolib for free on Open Data via [Binder](https://github.com/8080labs/bamboolib_binder_template) and Kaggle. If you have any issues or feature requests, please open an issue.
+This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). You can use bamboolib for free if you use bamboolib on your local computer or on Open Data via [Binder](https://github.com/8080labs/bamboolib_binder_template). 
+
+- If you have any issues or feature requests, please [open an issue](https://github.com/tkrabel/bamboolib/issues/new/choose).
+- If you want to use bamboolib on hosted services such as JupyterHub or AWS, please [upgrade to pro](https://bamboolib.8080labs.com/pricing).
+- If you want to use more than 3 plugins for bamboolib, please [upgrade to pro](https://bamboolib.8080labs.com/pricing).
 
 bamboolib is a GUI for pandas DataFrames that enables anyone to work with Python in Jupyter Notebook or JupyterLab.
 
@@ -15,13 +21,12 @@ bamboolib is a GUI for pandas DataFrames that enables anyone to work with Python
 
 ## Main benefits of bamboolib
 
-- Enables data analysts to work with Python without having to write code
-- Reduces the on-boarding time and training costs for data analysts
-- Removes the organizational divide between GUI and coding tools and creates a single platform & point of truth
-- Enables data analysts to collaborate with data scientists within Jupyter and to share the working results as reproducible code
-- Compared to other enterprise AI platforms, bamboolib creates no technical lock-in and provides the greatest flexibility via leveraging Python
-- Even people who can code use bamboolib because it is faster and easier than writing the code themselves
-- Reduces cognitive load: Focus on what's important instead of spending your time on StackOverflow.
+- Enables anyone to **analyse data in Python without having to write code**
+- Even people who can code use bamboolib because it is **faster and easier** than writing the code themselves
+- Reduces employee on-boarding time and training costs
+- Enables team members of all skill levels to collaborate within Jupyter and to share the working results as reproducible code
+- No lock-in. You own the code you created with bamboolib
+- All your data remains private and secure
 
 __[🔍Try bamboolib live on Binder](https://bamboolib.com/demo)__
 
@@ -48,4 +53,7 @@ You find out how to get started along with tutorials and an API reference on our
 ## Further links
 
 - [Official Website](https://bamboolib.8080labs.com/)
+- [Get started using bamboolib](https://docs.bamboolib.8080labs.com/documentation/getting-started)
+- [Use bamboolib with your keayboard for maximum speed up](https://docs.bamboolib.8080labs.com/documentation/tutorials/keyboard)
+- [How to extend bamboolib with plugins](./plugins)
 - [bamboolib tutorial on Medium](https://towardsdatascience.com/bamboolib-learn-and-use-pandas-without-coding-23a7d3a94e1b).
