@@ -11,8 +11,6 @@
 This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). You can use bamboolib for free if you use bamboolib on your local computer or on Open Data via [Binder](https://github.com/8080labs/bamboolib_binder_template).
 
 - If you have any issues or feature requests, please [open an issue](https://github.com/tkrabel/bamboolib/issues/new/choose).
-- If you want to use bamboolib on hosted services such as JupyterHub or AWS, please [upgrade to pro](https://bamboolib.8080labs.com/pricing).
-- If you want to use more than 3 plugins for bamboolib, please [upgrade to pro](https://bamboolib.8080labs.com/pricing).
 
 bamboolib is a GUI for pandas DataFrames that enables anyone to work with Python in Jupyter Notebook or JupyterLab.
 
