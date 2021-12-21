@@ -1,9 +1,14 @@
 # Community repository of bamboolib
+
+> bamboolib is joining forces with Databricks. For more information, please read our [announcement](https://docs.bamboolib.8080labs.com/databricks).
+
+> Please note that this repository does not contain the source code of bamboolib. The repo contains e.g. [explanations and code samples for plugins](https://github.com/tkrabel/bamboolib/tree/master/plugins) and it serves as a place to answer public questions via [issues](https://github.com/tkrabel/bamboolib/issues).
+
 # Data Analysis in Python 🐍 - without becoming a programmer or googling syntax
 
 [![](https://img.shields.io/badge/python-3.6-blue.svg)](https://bamboolib.com)[![](https://img.shields.io/badge/python-3.7-green.svg)](https://bamboolib.com)[![](https://img.shields.io/badge/python-3.8-orange.svg)](https://bamboolib.com)
 
-This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). You can use bamboolib for free if you use bamboolib on your local computer or on Open Data via [Binder](https://github.com/8080labs/bamboolib_binder_template). 
+This is the community repository of [bamboolib](https://bamboolib.8080labs.com/). You can use bamboolib for free if you use bamboolib on your local computer or on Open Data via [Binder](https://github.com/8080labs/bamboolib_binder_template).
 
 - If you have any issues or feature requests, please [open an issue](https://github.com/tkrabel/bamboolib/issues/new/choose).
 - If you want to use bamboolib on hosted services such as JupyterHub or AWS, please [upgrade to pro](https://bamboolib.8080labs.com/pricing).
