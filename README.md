@@ -57,6 +57,6 @@ You find out how to get started along with tutorials and an API reference on our
 
 - 🌐 [Official Website](https://bamboolib.8080labs.com/)
 - 📘 [Get started using bamboolib](https://docs.bamboolib.8080labs.com/documentation/getting-started)
-- 🚀 [Use bamboolib with your keayboard for maximum speed up](https://docs.bamboolib.8080labs.com/documentation/tutorials/keyboard)
+- 🚀 [Use bamboolib with your keyboard for maximum speed up](https://docs.bamboolib.8080labs.com/documentation/tutorials/keyboard)
 - 💪 [How to extend bamboolib with plugins](./plugins)
 - [bamboolib tutorial on Medium](https://towardsdatascience.com/bamboolib-learn-and-use-pandas-without-coding-23a7d3a94e1b)
