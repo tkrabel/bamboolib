@@ -21,6 +21,7 @@ bamboolib enables you to quickly add plugins or even write your own plugins base
 
 4) use the plugin from within the bamboolib user interface
 
+If you have questions, please reach out via bamboolib-feedback@databricks.com
 
 ## How to permanently add my plugin to bamboolib?
 
