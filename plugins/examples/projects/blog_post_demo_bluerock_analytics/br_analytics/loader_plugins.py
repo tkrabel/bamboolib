@@ -30,3 +30,16 @@ class LoadTickerData(LoaderPlugin):
 
     def get_code(self):
         return f"""{DF_NEW} = br.load_ticker({self.tickers_input.value})"""
+
+
+class LoadGoogleSpreadsheetData(LoaderPlugin):
+    name = "BR: Google Spreadsheet - load data"
+    # TODO: to be implemented with your credentials etc
+
+class LoadBigQueryData(LoaderPlugin):
+    name = "BR: BigQuery - load data"
+    # TODO: to be implemented with your credentials etc
+
+class LoadSnowflakeData(LoaderPlugin):
+    name = "BR: Snowflake - load data"
+    # TODO: to be implemented with your credentials etc
