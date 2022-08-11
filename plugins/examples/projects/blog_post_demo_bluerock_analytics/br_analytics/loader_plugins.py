@@ -12,10 +12,10 @@ class LoadTickerData(LoaderPlugin):
         super().__init__(**kwargs)
 
         ticker_options = [
-            {"label": "Google/Alphabet (GOOG)", "value":"ticker_goog"},
-            {"label": "Apple (AAPL)", "value":"ticker_aapl"},
-            {"label": "Microsoft (MSF)", "value":"ticker_msf"},
-            {"label": "Amazon (AMZ)", "value":"ticker_amz"},
+            {"label": "Google/Alphabet (GOOG)", "value":"goog_ticker_clean"},
+            {"label": "Apple (AAPL)", "value":"aapl_ticker_clean"},
+            {"label": "Microsoft (MSF)", "value":"msf_ticker_clean"},
+            {"label": "Amazon (AMZ)", "value":"amz_ticker_clean"},
         ]
         self.tickers_input = Multiselect(options=ticker_options, value="", width="xl")
 
