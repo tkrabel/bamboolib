@@ -14,7 +14,7 @@ class YAxisForStocks(pc.YAxisWithMultipleColumns):
 
 # %%
 class ColorForStocks(pc.Color):
-    default_value = "ticker"
+    default_value = "label"
 
 
 # %%
