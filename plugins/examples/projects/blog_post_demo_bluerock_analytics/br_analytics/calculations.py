@@ -1,6 +1,8 @@
 # %%
 import pandas as pd
-# spark - available within Databricks by default
+# The spark setup is expected to fail outside of Databricks
+from pyspark.sql import SparkSession
+spark = SparkSession.getActiveSession()
 
 # %%
 def load_ticker(ticker_list):
