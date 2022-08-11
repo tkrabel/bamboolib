@@ -11,6 +11,7 @@ def load_ticker(ticker_list):
         ticker_df = spark.table(ticker_name).toPandas()
         df_list.append(ticker_df)
     df = pd.concat(df_list, axis=0, ignore_index=True)
+    df = df.sort_values(by=['date'], ascending=[True])
     return df
 
 
