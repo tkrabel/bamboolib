@@ -1,0 +1,6 @@
+from br_analytics.calculations import load_ticker, add_index_return
+
+import br_analytics.figure_plugins
+import br_analytics.loader_plugins
+import br_analytics.transformation_plugins
+import br_analytics.view_plugins
