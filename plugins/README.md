@@ -1,7 +1,5 @@
 # Plugins - add your own transformations, loaders or views
 
-> __Beta:__ Plugins are currently in Beta and the API is not stable yet. Please expect that the API might change to some extent. However, we will try to minimize any changes and provide backwards compatibility.
-
 ## Scenario:
 - Are you __missing a special transformation__ in bamboolib?
 - Do you want to provide __custom transformations for your team__?
